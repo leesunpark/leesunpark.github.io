@@ -13,6 +13,10 @@
 
 <tw-storydata name="Homework" startnode="37" creator="Twine" creator-version="2.2.1" ifid="AC0EACDD-3BEB-49FB-A774-CB626B3D3D26" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Jua');
 
+typewriter {
+   font-size: 8vh; font-size: 8vw; font-size: 8min; line-height: normal;
+}
+
 tw-story {
   /*font-family: 'Jua', sans-serif;*/
   background: navy;
@@ -28,7 +32,7 @@ tw-passage {
   border: solid #000 0.05em;
   border-radius: 0.2em;
   font-family: Geneva, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 4vh; font-size: 4vw; font-size: 4min; line-height: normal;
   color:#000;
   text-align:left;
   background-color:#fff;
@@ -70,9 +74,7 @@ tw-include[title="Sidebar"] {
 
 tw-sidebar {
   visibility: hidden;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
-
-</script><tw-passagedata pid="1" name="집" tags="" position="987.6666666666666,172" size="100,100">밤 9시. 고된 하루를 끝내고 집으로 돌아왔다.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="집" tags="" position="987.6666666666666,172" size="100,100">밤 9시. 고된 하루를 끝내고 집으로 돌아왔다.
 이런 저런 일 하다보니 시간이 빠르게 갔다.
 아. 몸 속에 스트레스가 가득 쌓인 느낌이야.
 
@@ -328,10 +330,22 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 [[잠에서 깨기]]</tw-passagedata><tw-passagedata pid="35" name="과거의 한 순간" tags="" position="1302,3506" size="100,100">**아.
 숙제 여기까지 하고 나면 과자랑 사탕 먹게 해줄게.
 
-</tw-passagedata><tw-passagedata pid="36" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="시작" tags="sidebar" position="988.3333333333334,35" size="100,100">Homework
+</tw-passagedata><tw-passagedata pid="36" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="시작" tags="" position="988.3333333333334,35" size="100,100">&lt;typewriter&gt;
+(set: $typewriterText to &quot;Homework&quot;){
+(set: $typewriterPos to 1)
+|typewriterOutput&gt;[]
+(live: 80ms)[
+(append: ?typewriterOutput)[(print: $typewriterText&#39;s $typewriterPos)]
+&lt;!-- Update the position --&gt;
+(set: $typewriterPos to it + 1)
+&lt;!-- If it&#39;s gone past the end, stop --&gt;
+(if: $typewriterPos is $typewriterText&#39;s length + 1)[
+(stop:)]]
+}
+&lt;/typewriter&gt;
 
 [[시작|집]]
-[[크레딧]]</tw-passagedata><tw-passagedata pid="38" name="크레딧" tags="" position="1138.3333333333335,33.33333333333326" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[크레딧]]</tw-passagedata><tw-passagedata pid="38" name="크레딧" tags="" position="1138.3333333333335,33.33333333333326" size="100,100">제작: 박이선(비비평)</tw-passagedata><tw-passagedata pid="39" name="Untitled Passage 1" tags="" position="1176.6666666666667,571.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
