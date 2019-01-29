@@ -14,11 +14,23 @@
 <tw-storydata name="Homework" startnode="37" creator="Twine" creator-version="2.2.1" ifid="AC0EACDD-3BEB-49FB-A774-CB626B3D3D26" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Jua');
 
 tw-story {
-  color: black;
-  font-family: 'Jua', sans-serif;
-  text-align: left;
-  
-  background: linear-gradient(lightblue, pink);
+  /*font-family: 'Jua', sans-serif;*/
+  background: navy;
+  /*background: linear-gradient(lightblue, pink);*/
+}
+
+tw-passage {
+  width: 60%;
+  padding: 2em;
+  margin: auto;
+  border: solid #000 0.05em;
+  border-radius: 0.2em;
+  font-family: Geneva, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:1.3rem;
+  color:#000;
+  text-align:left;
+  background-color:#fff;
+  box-shadow: #000 0.5em 0.5em 0;
 }
 
 tw-link {
@@ -28,9 +40,37 @@ tw-link {
 
 tw-link:hover { /* Mouse over a link & it turns orange */
   color: darkred;
+}
+
+.name
+{
+  color: red + white;
+}
+
+/*
+    Reposition the Sidebar 'footer' tagged passage.
+*/
+
+
+tw-include[title="Sidebar"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+  /* padding-right of the tw-story element. */
+    max-height: 100%;
+    margin-top: calc(5% + 171px);
+  /* padding-top of the tw-story element plus computed height of the tw-sidebar element. */
+    padding: 0.5em;
+    background-color: transparent;
+    text-align: right;
+}
+
+tw-sidebar {
+  visibility: hidden;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="집" tags="" position="989.3333333333334,155.33333333333334" size="100,100">밤 9시. 고된 하루를 끝내고 집으로 돌아왔다.
+</script><tw-passagedata pid="1" name="집" tags="" position="987.6666666666666,172" size="100,100">밤 9시. 고된 하루를 끝내고 집으로 돌아왔다.
 이런 저런 일 하다보니 시간이 빠르게 갔다.
 아. 몸 속에 스트레스가 가득 쌓인 느낌이야.
 
@@ -40,7 +80,7 @@ tw-link:hover { /* Mouse over a link & it turns orange */
 
 [[게임실행&lt;-&lt;어메이징 오픈 월드&gt;앱을 누른다.]]
 [[연락확인&lt;-연락 온 것이 있나 확인한다.]]
-[[취침_스마트폰&lt;-눈도 피곤한데 그만 하고 잠을 잔다.]]</tw-passagedata><tw-passagedata pid="3" name="취침_스마트폰" tags="" position="311,298" size="100,100">스마트폰도 습관이야.
+[[취침_스마트폰&lt;-눈도 피곤한데 그만 하고 잠을 잔다.]]</tw-passagedata><tw-passagedata pid="3" name="취침_스마트폰" tags="" position="297.6666666666667,304.6666666666667" size="100,100">스마트폰도 습관이야.
 피곤해 죽겠네. 그냥 잘래.
 
 [[침대&lt;-침대에 누워 눈을 감는다.]]</tw-passagedata><tw-passagedata pid="4" name="게임실행" tags="" position="998.3333333333334,306.6666666666667" size="100,100">[(타이틀과 함께 웅장한 음악이 나온다)
@@ -65,25 +105,25 @@ tw-link:hover { /* Mouse over a link & it turns orange */
 (if: $serverCheck is 1)[ [[캐릭터 이름-&gt;캐릭터명]]을 정해주세요. ]
 ]
 
-</tw-passagedata><tw-passagedata pid="5" name="연락확인" tags="" position="507,300" size="100,100">새로 온 연락이 없다.
+</tw-passagedata><tw-passagedata pid="5" name="연락확인" tags="" position="530.3333333333334,381.6666666666667" size="100,100">새로 온 연락이 없다.
 
-(display: &quot;스마트폰&quot;)</tw-passagedata><tw-passagedata pid="6" name="침대" tags="" position="301,497" size="100,100">내일이 다시 찾아오겠지.
+(display: &quot;스마트폰&quot;)</tw-passagedata><tw-passagedata pid="6" name="침대" tags="" position="281,497" size="100,100">내일이 다시 찾아오겠지.
 
 Game
 
 Over
 
-처음으로</tw-passagedata><tw-passagedata pid="7" name="캐릭터명" tags="" position="1001,502" size="100,100">캐릭터 이름을 지어주세요.
+처음으로</tw-passagedata><tw-passagedata pid="7" name="캐릭터명" tags="" position="997.6666666666666,438.6666666666667" size="100,100">캐릭터 이름을 지어주세요.
 (set: $name to &quot;&quot;)
 [이름 짓기]&lt;getName|
 
 (click: ?getName)[
 (set: $name to (prompt: &quot;캐릭터 이름을 지어주세요&quot;, &quot;&quot;))
-캐릭터 이름: (print: $name)
+캐릭터 이름: [(print: $name)]
 
 [[캐릭터 직업|캐릭터직업]]]
 
-</tw-passagedata><tw-passagedata pid="8" name="캐릭터외형" tags="" position="1015,902" size="100,100">캐릭터 외형을 선택해주세요.
+</tw-passagedata><tw-passagedata pid="8" name="캐릭터외형" tags="" position="1001.6666666666666,698.6666666666666" size="100,100">캐릭터 외형을 선택해주세요.
 
 &lt;style&gt; img {
 	max-width: 100%;
@@ -98,7 +138,7 @@ Over
 (set: $charBody to &quot;피카츄&quot;)
 [[다음으로 넘어가기|게임시작]]]</tw-passagedata><tw-passagedata pid="9" name="Untitled Passage" tags="" position="2302,1098" size="100,100">Double-click this passage to edit it.
 (link: &quot;Stake&quot;)[The Dracula crumbles to dust.]
-(link-reveal: &quot;Heart&quot;)[broken] </tw-passagedata><tw-passagedata pid="10" name="캐릭터직업" tags="" position="1001,705" size="100,100">캐릭터의 직업을 선택해주세요.
+(link-reveal: &quot;Heart&quot;)[broken] </tw-passagedata><tw-passagedata pid="10" name="캐릭터직업" tags="" position="1002.6666666666666,568.3333333333333" size="100,100">캐릭터의 직업을 선택해주세요.
 (set: $role to &quot;&quot;)
 
 (link: &quot;전사&quot;)[전사를 선택하였습니다.(set: $role to &quot;전사&quot;)]
@@ -107,7 +147,7 @@ Over
 (link: &quot;성직자&quot;)[성직자를 선택하였습니다.(set: $role to &quot;성직자&quot;)]
 (link: &quot;도적&quot;)[도적을 선택하였습니다.(set: $role to &quot;도적&quot;)]
 
-[[캐릭터 외형|캐릭터외형]]</tw-passagedata><tw-passagedata pid="11" name="게임시작" tags="" position="1006,1097" size="100,100">어메이징 오픈 월드에 오신 걸 환영합니다.
+[[캐릭터 외형|캐릭터외형]]</tw-passagedata><tw-passagedata pid="11" name="게임시작" tags="" position="1002.6666666666666,823.6666666666666" size="100,100">어메이징 오픈 월드에 오신 걸 환영합니다.
 
 당신의 캐릭터 이름은 (print: &quot;$name&quot;)이며,
 캐릭터 직업은 (print: &quot;$role&quot;), 
@@ -121,22 +161,8 @@ Over
 마을에서 상점 주인 리나를 찾아주세요.
 
 [[밖으로 나가기|밖]]
-[[회관을 둘러본다|회관]]</tw-passagedata><tw-passagedata pid="12" name="Untitled Passage 2" tags="" position="2182,1094" size="100,100">&lt;script&gt;
-$(function () {
-	$.getScript(&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js&quot;, function(data, textStatus, jqxhr) {
-	console.log(&#39;jquery ui file loaded&#39;);
-	}
-	);
-	});
-&lt;/script&gt;
-	
-	
-&lt;div id=&quot;box&quot; style=&quot;width: 100px; height: 100px; background: #ccc;&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-$(&quot;#box&quot;).click(function(){ $(&quot;#box&quot;).toggle(&quot;bounce&quot;, {times: 3}, &quot;slow&quot;);
-});
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="밖" tags="" position="1305,1098" size="100,100">두가지 길이 있다
+[[회관을 둘러본다|회관]]</tw-passagedata><tw-passagedata pid="12" name="Sidebar" tags="footer" position="1440.3333333333333,168.99999999999991" size="100,100">Name: $name
+Location: $location</tw-passagedata><tw-passagedata pid="13" name="밖" tags="" position="1305,1098" size="100,100">두가지 길이 있다
 
 [[동쪽으로 간다|마을1]]
 
@@ -300,7 +326,7 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 [[잠에서 깨기]]</tw-passagedata><tw-passagedata pid="35" name="과거의 한 순간" tags="" position="1302,3506" size="100,100">**아.
 숙제 여기까지 하고 나면 과자랑 사탕 먹게 해줄게.
 
-</tw-passagedata><tw-passagedata pid="36" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="시작" tags="sidebar" position="988.3333333333334,31.666666666666668" size="100,100">Homework
+</tw-passagedata><tw-passagedata pid="36" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="시작" tags="sidebar" position="988.3333333333334,35" size="100,100">Homework
 
 [[시작|집]]
 [[크레딧]]</tw-passagedata><tw-passagedata pid="38" name="크레딧" tags="" position="1138.3333333333335,33.33333333333326" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
