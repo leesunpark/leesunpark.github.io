@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Homework" startnode="35" creator="Twine" creator-version="2.2.1" ifid="AC0EACDD-3BEB-49FB-A774-CB626B3D3D26" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Jua');
+<tw-storydata name="Homework" startnode="66" creator="Twine" creator-version="2.2.1" ifid="AC0EACDD-3BEB-49FB-A774-CB626B3D3D26" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Jua');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300');
 
 #circle {
@@ -98,23 +98,17 @@ tw-sidebar {
 
 
 - [[게임실행&lt;-&lt;오픈 월드 온라인&gt;]]을 누른다.
-- [[연락확인&lt;-연락 온 것]]이 있나 확인한다.</tw-passagedata><tw-passagedata pid="3" name="게임실행" tags="" position="998.3333333333334,303.33333333333337" size="100,100">[(타이틀과 함께 웅장한 음악이 나온다)](set: $serverName to &quot;&quot;)(set: $indiana to 0)(set: $david to 0)
+- [[연락확인&lt;-연락 온 것]]이 있나 확인한다.</tw-passagedata><tw-passagedata pid="3" name="게임실행" tags="" position="998.3333333333334,303.33333333333337" size="100,100">[(타이틀과 함께 웅장한 음악이 나온다)](set: $serverName to &quot;&quot;)
 &lt;typewriter&gt;*Amazing Open World*&lt;/typewriter&gt;
 
 
 서버를 선택해주세요.
 
-[[인디아나]]&lt;getIndiana|
-[[데이비드]]&lt;getDavid|
+[인디아나]&lt;getIndiana|
+[하레트]&lt;getHaret|
 
-서버명: (text-style: &quot;underline&quot;)[$serverName]
-
-(click: ?getIndiana) [(set: $indiana to 1)
-(set: $serverName to &quot;인디아나&quot;)(if: $indiana is 1)[ [[캐릭터 이름-&gt;캐릭터명]]을 정해주세요.(set: $david to 0)]]
-
-(click: ?getDavid) [(set:$david to 1)
-(set: $serverName to &quot;데이비드&quot;)(if: $david is 1)[ [[캐릭터 이름-&gt;캐릭터명]]을 정해주세요.(set: $indiana to 0)]] 
-</tw-passagedata><tw-passagedata pid="4" name="연락확인" tags="" position="513.6666666666666,376.6666666666667" size="100,100">현재시각
+(click: ?getIndiana)[(set: $serverName to &quot;인디아나&quot;)(go-to: &quot;캐릭터명&quot;)]
+(click: ?getHaret)[(set: $serverName to &quot;하레트&quot;)(go-to: &quot;캐릭터명&quot;)]</tw-passagedata><tw-passagedata pid="4" name="연락확인" tags="" position="513.6666666666666,376.6666666666667" size="100,100">현재시각
 (text-style: &quot;bold&quot;)[(current-time:)]
 
 
@@ -135,10 +129,10 @@ Game Over
 [이름 짓기]&lt;getName|
 
 (click: ?getName)[
-(set: $name to (prompt: &quot;캐릭터 이름을 지어주세요&quot;, &quot;&quot;))(if: $name != &quot;&quot;)[(go-to: &quot;캐릭터직업&quot;)]]
+(set: $name to (prompt: &quot;캐릭터 이름을 지어주세요&quot;, &quot;&quot;))[(go-to: &quot;캐릭터직업&quot;)]]
 
 
-</tw-passagedata><tw-passagedata pid="7" name="캐릭터외형" tags="" position="1005,702" size="100,100">캐릭터 외형을 선택해주세요.
+</tw-passagedata><tw-passagedata pid="7" name="캐릭터외형" tags="" position="2098.3333333333335,402" size="100,100">캐릭터 외형을 선택해주세요.
 
 &lt;style&gt; img {
 	max-width: 100%;
@@ -150,8 +144,7 @@ Game Over
 &lt;/div&gt;
 
 (link: &quot;피카츄&quot;)[피카츄를 선택하였습니다
-(set: $charBody to &quot;피카츄&quot;)
-[[다음으로 넘어가기|게임시작]]]</tw-passagedata><tw-passagedata pid="8" name="Untitled Passage" tags="" position="1978.6666666666665,409.66666666666663" size="100,100">Double-click this passage to edit it.
+(set: $charBody to &quot;피카츄&quot;)</tw-passagedata><tw-passagedata pid="8" name="Untitled Passage" tags="" position="1978.6666666666665,409.66666666666663" size="100,100">Double-click this passage to edit it.
 (link: &quot;Stake&quot;)[The Dracula crumbles to dust.]
 (link-reveal: &quot;Heart&quot;)[broken]
 
@@ -159,7 +152,7 @@ Game Over
 
 (link:&quot;Turn on fan&quot;)[(show:?fan)]
 
-There is a small dish of water. (click: &quot;dish&quot;)[Your finger gets wet.]</tw-passagedata><tw-passagedata pid="9" name="캐릭터직업" tags="" position="1002.6666666666666,568.3333333333333" size="100,100">캐릭터의 직업을 선택해주세요.
+There is a small dish of water. (click: &quot;dish&quot;)[Your finger gets wet.]</tw-passagedata><tw-passagedata pid="9" name="캐릭터직업" tags="" position="1002.6666666666666,588.3333333333333" size="100,100">캐릭터의 직업을 선택해주세요.
 (set: $role to &quot;&quot;)
 
 (link: &quot;전사&quot;)[전사를 선택하였습니다.(set: $role to &quot;전사&quot;)]
@@ -168,12 +161,11 @@ There is a small dish of water. (click: &quot;dish&quot;)[Your finger gets wet.]
 (link: &quot;성직자&quot;)[성직자를 선택하였습니다.(set: $role to &quot;성직자&quot;)]
 (link: &quot;도적&quot;)[도적을 선택하였습니다.(set: $role to &quot;도적&quot;)]
 
-[[캐릭터 외형|캐릭터외형]]</tw-passagedata><tw-passagedata pid="10" name="게임시작" tags="" position="1002.6666666666666,821.9999999999999" size="100,100">〈오픈월드 온라인〉에 접속했다.
+[[게임 시작하기|게임시작]]</tw-passagedata><tw-passagedata pid="10" name="게임시작" tags="" position="1002.6666666666666,763.6666666666665" size="100,100">〈오픈월드 온라인〉에 접속했다.
 
 현재 서버: $serverName
 캐릭터 이름: $name
 캐릭터 직업: $role 
-캐릭터 외형: 피카츄
 
 이곳은 시작의 회관입니다.
 
@@ -181,18 +173,17 @@ There is a small dish of water. (click: &quot;dish&quot;)[Your finger gets wet.]
 마을에서 상점 주인 리나를 찾아주세요.&lt;/p&gt;&lt;/div&gt;
 
 [[밖으로 나가기|밖]]</tw-passagedata><tw-passagedata pid="11" name="Sidebar" tags="" position="1485.3333333333333,195.66666666666657" size="100,100">Name: $name
-Location: $location</tw-passagedata><tw-passagedata pid="12" name="밖" tags="" position="1006.6666666666667,958" size="100,100">두가지 길이 있다. 
+Location: $location</tw-passagedata><tw-passagedata pid="12" name="밖" tags="" position="993.3333333333334,921.3333333333334" size="100,100">두가지 길이 있다. 
 
 - [[동쪽|마을1]]으로 간다.
 - [[서쪽|던전]]으로 간다.</tw-passagedata><tw-passagedata pid="13" name="마을1" tags="" position="1062.3333333333333,1111.6666666666665" size="100,100">*마을*
 
-- [[상점으로 간다]]
-- [[사냥터로 간다]]
-- [[분수로 간다]]</tw-passagedata><tw-passagedata pid="14" name="상점으로 간다" tags="" position="937.6666666666667,1261.6666666666665" size="100,100">상점 주인이 카운터에 서있다.
+- [[상점으로 간다|상점]]
+- [[사냥터로 간다|사냥터]]</tw-passagedata><tw-passagedata pid="14" name="상점" tags="" position="924,1261.6666666666665" size="100,100">상점 주인이 카운터에 서있다.
 
 (link: &quot;인사를 건넨다&quot;)[안녕하세요.]
 
-(live: 5s)[(stop:)반가워요. 당신을 기다렸어요.
+(live: 3s)[(stop:)반가워요. 당신을 기다렸어요.
 우리 마을은 지금 위험에 쳐했어요.
 성 밖의 봉인 구역이 어쩐 일로 인해 해제되었고,
 악마가 마을을 침략했답니다.
@@ -205,7 +196,7 @@ Location: $location</tw-passagedata><tw-passagedata pid="12" name="밖" tags="" 
 ]
 ]
 
-</tw-passagedata><tw-passagedata pid="15" name="사냥터로 간다" tags="" position="1144,1269" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="분수로 간다" tags="" position="1348,1275" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="그럼요." tags="" position="1021,1406.3333333333333" size="100,100">&quot;자, 여기 제가 만든 (text-style: &quot;bold&quot;)[무기]와 (text-style: &quot;bold&quot;)[옷]이에요. 허름해보이지만 그래도 안 쓰는 것보단 나을 것이에요. 그럼 부디 외곽에 출몰한 악마를 없애주세요!&quot;
+</tw-passagedata><tw-passagedata pid="15" name="그럼요." tags="" position="1021,1406.3333333333333" size="100,100">&quot;자, 여기 제가 만든 (text-style: &quot;bold&quot;)[무기]와 (text-style: &quot;bold&quot;)[옷]이에요. 허름해보이지만 그래도 안 쓰는 것보단 나을 것이에요. 그럼 부디 외곽에 출몰한 악마를 없애주세요!&quot;
 
 (link: &quot;받기&quot;)[무기와 옷을 얻었다! (set: $power to 5)(set: $defense to 5)
 
@@ -215,21 +206,22 @@ Location: $location</tw-passagedata><tw-passagedata pid="12" name="밖" tags="" 
 &lt;div id=&quot;quest&quot;&gt;&lt;p&gt;메인 퀘스트2
 외곽에 출몰한 악마 10마리를 처치하시오.&lt;/p&gt;&lt;/div&gt;
 
-[[마을2]]</tw-passagedata><tw-passagedata pid="18" name="아니오." tags="" position="822.3333333333334,1400.3333333333333" size="100,100">싫어도 어쩔 수 없어요.
+[[마을2]]</tw-passagedata><tw-passagedata pid="16" name="아니오." tags="" position="822.3333333333334,1400.3333333333333" size="100,100">싫어도 어쩔 수 없어요.
 당신은 이 게임에 접속한 이상,
 정해진 일을 수행해야하는걸요.
 
-(display: &quot;그럼요.&quot;)</tw-passagedata><tw-passagedata pid="19" name="마을2" tags="" position="1019.3333333333334,1535.6666666666665" size="100,100">*마을*
+(display: &quot;그럼요.&quot;)</tw-passagedata><tw-passagedata pid="17" name="마을2" tags="" position="909.3333333333334,1562.3333333333333" size="100,100">*마을*
 
 [[상점으로 이동한다|상점재입장]]
 [[사냥터로 이동한다|사냥터]]
-[[다른 유저와 대화를 한다|유저대화]]</tw-passagedata><tw-passagedata pid="20" name="던전" tags="" position="1127,958.3333333333335" size="100,100">이 곳은 지금 레벨로 입장할 수 없습니다.
+[[다른 유저와 대화를 한다|유저대화]]</tw-passagedata><tw-passagedata pid="18" name="던전" tags="" position="819,973.3333333333335" size="100,100">이 곳은 지금 레벨로 입장할 수 없습니다.
 
-[[돌아가기|마을1]]</tw-passagedata><tw-passagedata pid="21" name="상점재입장" tags="" position="1373,2123" size="100,100">상점 주인: 어서 임무를 수행해주세요.
+[[돌아가기|마을1]]</tw-passagedata><tw-passagedata pid="19" name="상점재입장" tags="" position="1373,2123" size="100,100">상점 주인: 어서 임무를 수행해주세요.
 if문 써서 10마리 다 죽였으면 퀘스트 성공
 10마리 다 못죽였으면 아무것도 안나옴
 퀘스트 성공 했으면 아무것도 안나옴. 악마를 처치해줘서 고마워요 이런 메시지만 나오고
-[되돌아가기]</tw-passagedata><tw-passagedata pid="22" name="사냥터" tags="" position="1106,2037" size="100,100">퀘스트: 외곽에 출몰한 악마 10마리를 처치하세요.
+[되돌아가기]</tw-passagedata><tw-passagedata pid="20" name="사냥터" tags="" position="1224.3333333333333,1590.3333333333333" size="100,100">[(if: $quest1 is true)[
+퀘스트: 외곽에 출몰한 악마 10마리를 처치하세요.
 
 악마를 만났다.
 
@@ -241,27 +233,30 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 처치 성공! 금화 100원을 얻었다.
 
 [돌아다니기:반복]
-[[마을3]]</tw-passagedata><tw-passagedata pid="23" name="유저대화" tags="" position="811,2094" size="100,100">사람들이 삼삼오오 모여있다.
+[[마을3]]]
+(else:)[아직 무기가 없다. 
+
+[[돌아가기|마을1]]]]</tw-passagedata><tw-passagedata pid="21" name="유저대화" tags="" position="811,2094" size="100,100">사람들이 삼삼오오 모여있다.
 
 [그냥 인사를 건넨다]
 [물건 파는 사람에게 말을 건다]
-[춤을 춘다]</tw-passagedata><tw-passagedata pid="24" name="마을3" tags="" position="1109,2172" size="100,100">*마을*
+[춤을 춘다]</tw-passagedata><tw-passagedata pid="22" name="마을3" tags="" position="1067.3333333333333,1830.3333333333333" size="100,100">*마을*
 
 [[상점으로 이동한다|상점재입장]]
 [[사냥터로 이동한다|사냥터]]
 [[다른 유저와 대화를 한다|유저대화]]
-[[퀘스트3]]</tw-passagedata><tw-passagedata pid="25" name="퀘스트3" tags="" position="1109,2316" size="100,100">상점주인이 보상을 주고 나서, 치료약을 다른 NPC에게 전해준다.
+[[퀘스트3]]</tw-passagedata><tw-passagedata pid="23" name="퀘스트3" tags="" position="1109,2316" size="100,100">상점주인이 보상을 주고 나서, 치료약을 다른 NPC에게 전해준다.
 
 퀘스트3
 치료약을 다친 NPC에게 전해준다.
 
-[[마을로 간다|마을4]]</tw-passagedata><tw-passagedata pid="26" name="마을4" tags="" position="1104,2470" size="100,100">*마을*
+[[마을로 간다|마을4]]</tw-passagedata><tw-passagedata pid="24" name="마을4" tags="" position="1104,2470" size="100,100">*마을*
 
 [[상점으로 이동한다|상점재입장]]
 [[빨간 벽돌의 집으로 이동한다|빨간벽돌집]]
-[[다른 유저와 대화를 한다|유저대화]]</tw-passagedata><tw-passagedata pid="27" name="빨간벽돌집" tags="" position="1108,2600" size="100,100">침대에 사람이 누워있다
+[[다른 유저와 대화를 한다|유저대화]]</tw-passagedata><tw-passagedata pid="25" name="빨간벽돌집" tags="" position="1108,2600" size="100,100">침대에 사람이 누워있다
 
-[[치료약을 건네준다|치료약전달]]</tw-passagedata><tw-passagedata pid="28" name="치료약전달" tags="" position="1111,2736" size="100,100">환자: 고...고마워요....
+[[치료약을 건네준다|치료약전달]]</tw-passagedata><tw-passagedata pid="26" name="치료약전달" tags="" position="1111,2736" size="100,100">환자: 고...고마워요....
 이건 답례입니다...
 
 퀘스트3 성공!
@@ -272,13 +267,13 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 퀘스트4를 받는다.
 나무를 뒤져서 열매를 10개 얻어와라.
 
-[[밖으로 나간다|빨간벽돌집근처]]</tw-passagedata><tw-passagedata pid="29" name="빨간벽돌집근처" tags="" position="1111,2871" size="100,100">나무를 뒤져서 열매를 채취한다.
+[[밖으로 나간다|빨간벽돌집근처]]</tw-passagedata><tw-passagedata pid="27" name="빨간벽돌집근처" tags="" position="1111,2871" size="100,100">나무를 뒤져서 열매를 채취한다.
 
 있는 나무, 없는 나무가 있음(확률로 조정)
 
 열매를 모두 얻으면 경험치 +몇 올라감
 
-마을에서 [[알리아]] 찾아가기</tw-passagedata><tw-passagedata pid="30" name="알리아" tags="" position="1111,3021" size="100,100">고마워요 (print: $name).
+마을에서 [[알리아]] 찾아가기</tw-passagedata><tw-passagedata pid="28" name="알리아" tags="" position="1111,3021" size="100,100">고마워요 (print: $name).
 아픈 사람을 도와줬군요. 감동적이에요.
 이것은 나의 선물이에요. 부디 악마로부터 마을을 지켜주세요.
 
@@ -289,12 +284,12 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 
 무튼 이런 일련의 행동을 했다가 게임을 끈다.
 
-이제 [[잘 시간|게임종료]]이네</tw-passagedata><tw-passagedata pid="31" name="게임종료" tags="" position="1111,3171" size="100,100">현실로 돌아왔다.
+이제 [[잘 시간|게임종료]]이네</tw-passagedata><tw-passagedata pid="29" name="게임종료" tags="" position="1111,3171" size="100,100">현실로 돌아왔다.
 
 자기 전에 시간이 남았으니 방을 치우자.
 
 [[방을 치우기]]
-</tw-passagedata><tw-passagedata pid="32" name="방을 치우기" tags="" position="1109,3338" size="100,100">(퀘스트)
+</tw-passagedata><tw-passagedata pid="30" name="방을 치우기" tags="" position="1109,3338" size="100,100">(퀘스트)
 방을 치우시오.
 이 퀘스트는 난이도가 낮습니다. 그러나 일정 기간 수행하지 않았을 시 난이도는 점점 올라갑니다.
 보상: 기관지 건강 +1
@@ -333,14 +328,17 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 -퀘스트를 50회 이상 완수했을 때 보상이 주어집니다.
 보상: 지혜 +5
 
+(퀘스트)
+
+
 이 일은 아무런 보상이 없을 수도 있습니다.
 이 일은 10년 뒤에 보상이 찾아올 수도 있습니다.
 이 일은 자신이 정하는데로 보상이 주어집니다.
 
-[[잠에서 깨기]]</tw-passagedata><tw-passagedata pid="33" name="과거의 한 순간" tags="" position="1302,3506" size="100,100">**아.
+[[잠에서 깨기]]</tw-passagedata><tw-passagedata pid="31" name="과거의 한 순간" tags="" position="1302,3506" size="100,100">**아.
 숙제 여기까지 하고 나면 과자랑 사탕 먹게 해줄게.
 
-</tw-passagedata><tw-passagedata pid="34" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="시작" tags="" position="988.3333333333334,35" size="100,100">&lt;typewriter&gt;
+</tw-passagedata><tw-passagedata pid="32" name="잠에서 깨기" tags="" position="874,3510" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="시작" tags="" position="988.3333333333334,35" size="100,100">&lt;typewriter&gt;
 (text-style: &quot;bold&quot;)[(set: $typewriterText to &quot;Homework&quot;){
 (set: $typewriterPos to 1)
 |typewriterOutput&gt;[]
@@ -354,32 +352,276 @@ if문 써서 10마리 다 죽였으면 퀘스트 성공
 &lt;/typewriter&gt;
 [[시작|집]]
 
-(align: &quot;====&gt;&quot;)[[[크레딧]]]</tw-passagedata><tw-passagedata pid="36" name="Untitled Passage 1" tags="" position="1176.6666666666667,571.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="[침대" tags="" position="1128.3333333333335,322" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="TV" tags="" position="726.6666666666666,225.33333333333334" size="100,100">즐겨보던 드라마 〈SKY 캐슬〉이 끝이 났다. 요즘은 예전 같이 TV 앞에 자주 앉아있지는 않는다. 흥미로운 방송을 찾기 전까지 눈여겨 볼만한 것은 없다.
+(align: &quot;====&gt;&quot;)[[[크레딧]]]</tw-passagedata><tw-passagedata pid="34" name="TV" tags="" position="726.6666666666666,225.33333333333334" size="100,100">즐겨보던 드라마 〈SKY 캐슬〉이 끝이 났다. 요즘은 예전 같이 TV 앞에 자주 앉아있지는 않는다. 흥미로운 방송을 찾기 전까지 눈여겨 볼만한 것은 없다.
 
-[[스마트폰]]을 본다.</tw-passagedata><tw-passagedata pid="39" name="[크레딧" tags="" position="1427.6666666666665,38.333333333333336" size="100,100">- 제작: 박이선(비비평)
+[[스마트폰]]을 본다.</tw-passagedata><tw-passagedata pid="35" name="[크레딧" tags="" position="1427.6666666666665,38.333333333333336" size="100,100">- 제작: 박이선(비비평)
 - 사운드:
 - 아트:
 
-[[이전-&gt;시작]]</tw-passagedata><tw-passagedata pid="40" name="인디아나" tags="" position="887.6666666666666,453.33333333333337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="데이비드" tags="" position="1127.6666666666665,453.33333333333337" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="퀘스트1" tags="" position="1765.8333333333335,3410.8333333333335" size="100,100">퀘스트 1 수행
+[[이전-&gt;시작]]</tw-passagedata><tw-passagedata pid="36" name="퀘스트1" tags="" position="1765.8333333333335,3410.8333333333335" size="100,100">퀘스트 1 수행
 
-[[퀘스트2]]</tw-passagedata><tw-passagedata pid="43" name="퀘스트2" tags="" position="1765.8333333333335,3560.8333333333335" size="100,100">퀘스트2 수행
+[[퀘스트2]]</tw-passagedata><tw-passagedata pid="37" name="퀘스트2" tags="" position="1765.8333333333335,3560.8333333333335" size="100,100">퀘스트2 수행
 
-[[퀘스트_3]]</tw-passagedata><tw-passagedata pid="44" name="퀘스트_3" tags="" position="1765.8333333333335,3710.8333333333335" size="100,100">퀘스트3 수행
+[[퀘스트_3]]</tw-passagedata><tw-passagedata pid="38" name="퀘스트_3" tags="" position="1765.8333333333335,3710.8333333333335" size="100,100">퀘스트3 수행
 
-[[퀘스트_4]]</tw-passagedata><tw-passagedata pid="45" name="퀘스트_4" tags="" position="1765.8333333333335,3860.8333333333335" size="100,100">구석에 작은 버섯이 있다. 다른 유저들은 못 보는 것 같다. 
+[[퀘스트_4]]</tw-passagedata><tw-passagedata pid="39" name="퀘스트_4" tags="" position="1765.8333333333335,3860.8333333333335" size="100,100">구석에 작은 버섯이 있다. 다른 유저들은 못 보는 것 같다. 
 
-[[한 번 눌러본다]]</tw-passagedata><tw-passagedata pid="46" name="한 번 눌러본다" tags="" position="1765.8333333333335,4010.8333333333335" size="100,100">저의 존재를 눈치채셨군요. 당신은 특별함. 범상치 않음. 나와 잠시 얘기를 나눠보시죠.
+[[한 번 눌러본다]]</tw-passagedata><tw-passagedata pid="40" name="한 번 눌러본다" tags="" position="1765.8333333333335,4010.8333333333335" size="100,100">저의 존재를 눈치채셨군요. 당신은 특별함. 범상치 않음. 나와 잠시 얘기를 나눠보시죠.
 
-[[얘기를 듣는다]]</tw-passagedata><tw-passagedata pid="47" name="얘기를 듣는다" tags="" position="1765.8333333333335,4160.833333333334" size="100,100">당신은 게임과 현실의 차이를 알고 있나요?
+[[얘기를 듣는다]]</tw-passagedata><tw-passagedata pid="41" name="얘기를 듣는다" tags="" position="1765.8333333333335,4160.833333333334" size="100,100">당신은 게임과 현실의 차이를 알고 있나요?
 
 [[알고 있다]]
-[[대답한다]]</tw-passagedata><tw-passagedata pid="48" name="알고 있다" tags="" position="1689.1666666666667,4310.833333333334" size="100,100">보상이 다 사라졌다
+[[대답한다]]</tw-passagedata><tw-passagedata pid="42" name="알고 있다" tags="" position="1689.1666666666667,4310.833333333334" size="100,100">보상이 다 사라졌다
 
-[[게임을 끈다]]</tw-passagedata><tw-passagedata pid="49" name="대답한다" tags="" position="1840.8333333333335,4310.833333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Untitled Passage 2" tags="" position="1965.8333333333335,4567.500000000001" size="100,100"></tw-passagedata><tw-passagedata pid="51" name="게임을 끈다" tags="" position="1584.1666666666667,4459.166666666667" size="100,100">잠을 잔다
+[[게임을 끈다]]</tw-passagedata><tw-passagedata pid="43" name="대답한다" tags="" position="1840.8333333333335,4310.833333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Untitled Passage 2" tags="" position="1259.1666666666667,4544.166666666668" size="100,100"></tw-passagedata><tw-passagedata pid="45" name="게임을 끈다" tags="" position="1584.1666666666667,4459.166666666667" size="100,100">잠을 잔다
 
-[[꿈을 꾼다]]</tw-passagedata><tw-passagedata pid="52" name="꿈을 꾼다" tags="" position="1584.1666666666667,4609.166666666667" size="100,100">현실 게임 시작
+[[꿈을 꾼다]]</tw-passagedata><tw-passagedata pid="46" name="꿈을 꾼다" tags="" position="1584.1666666666667,4609.166666666667" size="100,100">현실 게임 시작
 
-[[현실은 재미가 없다...]]</tw-passagedata><tw-passagedata pid="53" name="현실은 재미가 없다..." tags="" position="1584.1666666666667,4759.166666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[현실은 재미가 없다...]]</tw-passagedata><tw-passagedata pid="47" name="현실은 재미가 없다..." tags="" position="1584.1666666666667,4759.166666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="구석의 NPC" tags="" position="2284.166666666667,3878.9998372395835" size="100,100">나를 발견하다니 예민한 유저로군요. 당신은 3개월동안 게임을 재미있게 해주었어요. 퀘스트가 잔뜩 쌓여있군요. 오늘 안에 끝내야 할 일일 퀘스트도 꽤 남았고... 나와 더 이야기할 생각 있나요?
+
+[[네|two]]</tw-passagedata><tw-passagedata pid="49" name="two" tags="" position="2284.166666666667,4028.9998372395835" size="100,100">혹시 현실과 게임 세계의 간극을 알고 있나요? 
+
+-갑자기 무슨 말인지?
+
+알고 있냐고요. 
+
+-그럼.                                                                                                          
+(당신이 생각하는 답을 적는다)
+
+[[다음|three]]</tw-passagedata><tw-passagedata pid="50" name="three" tags="" position="2284.166666666667,4178.999837239584" size="100,100">뿅-사라졌다.
+
+뭐야... 버그도 아니고.
+공식카페에 글 올려야겠네
+
+[[게임 종료|four]]
+[[게임</tw-passagedata><tw-passagedata pid="51" name="four" tags="" position="2284.166666666667,4328.999837239584" size="100,100">쪽지: 방이 더럽네요. 청소하시는 게 좋을 것 같은데. 
+
+[[어떻게 알았지?|five]] 
+[[무시하고 잠을 잔다|취침]]</tw-passagedata><tw-passagedata pid="52" name="five" tags="" position="2284.166666666667,4478.999837239584" size="100,100">쪽지: 내일하면 더 먼지만 쌓일 뿐이니까 치우세요. 게임도 껐으니.
+
+맞는 말이라서 기분이 나쁘다. 대충이라도 정리해두는 게.
+
+[[청소한다|six]]</tw-passagedata><tw-passagedata pid="53" name="six" tags="" position="2284.166666666667,4628.999837239584" size="100,100">(청소 모두 끝냄)
+
+쪽지: 방청소 달성(100/100)! 경험치 +100
+
+뭐...뭐야? 
+
+[[주변을 두리번거린다|두리번]]</tw-passagedata><tw-passagedata pid="54" name="취침" tags="" position="2420.8333333333335,4488.999837239584" size="100,100">다음날 아침.
+
+회사에 출근했다.
+
+새로오신 대표는 오전 미팅을 잡아서 전 직원에게 공지하겠다고 한다.
+
+&quot;일의 능률을 높이기 위해 업무 목표를 달성할 때마다 보상을 가시적으로 지급하겠습니다&quot;
+
+[[일을 한다|seven]]</tw-passagedata><tw-passagedata pid="55" name="seven" tags="" position="2427.5,4632.333170572917" size="100,100">업무를 1시간 할 때마다 보상이 주어진다. (금전적 보상)
+
+일의 능률이 아주 오른다...
+이게 모야....
+모든 일에 보상이 있다... 그래서..? 반전이 또 있어야할 거 아니야.
+
+</tw-passagedata><tw-passagedata pid="56" name="두리번" tags="" position="2284.166666666667,4778.999837239584" size="100,100">파리 한 마리 없다. 
+이상한데, 기분이 나쁘다. 
+
+[[샤워를 하러간다|샤워]]</tw-passagedata><tw-passagedata pid="57" name="샤워" tags="" position="2284.166666666667,4928.999837239584" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="첫째" tags="" position="508.99998982747394,3815.0000000000005" size="100,100">현재 시간: $time시
+일자: $day일째
+
+경험치: $exp
+건강: $health
+재정: $money
+애정: $love
+대인관계: $people
+지성: $brain
+
+(if: $time is 7 &amp;&amp; $nwork &lt; 5)[(display: &quot;출근&quot;)]
+(if: $work &gt; 21)[(display: &quot;만근&quot;)]
+(if: $nwork is 5)[(display: &quot;해고&quot;)]
+(if: $time &lt; 21 &amp;&amp; $time &gt;19)[(display: &quot;방치우기&quot;)]</tw-passagedata><tw-passagedata pid="59" name="일찍 잠에 든다" tags="" position="468.9999898274739,4038.3333333333335" size="100,100">(set: $health to $health + 5)(set: $time to 7)(set: $day to $day +1)
+
+현재 시간: $time시
+일자: $day일째
+
+경험치: $exp
+건강: $health
+재정: $money
+애정: $love
+대인관계: $people
+지성: $brain</tw-passagedata><tw-passagedata pid="60" name="야식을 먹는다" tags="" position="732.3333231608073,4045" size="100,100">(set: $health to $health -3)(set: $time to $time + 2)
+
+현재 시간: $time시
+일자: $day일째
+
+경험치: $exp
+건강: $health
+재정: $money
+애정: $love
+대인관계: $people
+지성: $brain</tw-passagedata><tw-passagedata pid="61" name="초기화" tags="" position="659,3660" size="100,100">(set: $health to 50)(set: $money to 0)(set: $love to 0)(set: $people to 0)(set: $brain to 0)(set: $exp to 0)(set: $work to 0)(set: $nwork to 0)(set: $time to 7)(set: $day to 0)
+
+[[첫째]]</tw-passagedata><tw-passagedata pid="62" name="출근" tags="" position="945.6666564941406,3818.3333333333335" size="100,100">- (link: &quot;출근을 한다&quot;)[(set: $exp to $exp + 10)(set: $work to $work + 1)(set: $time to $time + 12)(go-to: &quot;첫째&quot;)]
+22일 연속 수행시 재정 + 80
+
+- (link: &quot;출근을 하지 않는다&quot;)[(set: $nwork to $nwork +1)(go-to: &quot;첫째&quot;)]
+5번 연속 수행시 재정 -10</tw-passagedata><tw-passagedata pid="63" name="만근" tags="" position="1080.6666564941406,3938.3333333333335" size="100,100">(link: &quot;월급을 받는다.&quot;)[(set: $money to $money + 80)(go-to: &quot;첫째&quot;)]</tw-passagedata><tw-passagedata pid="64" name="해고" tags="" position="1080.6666564941406,4068.3333333333335" size="100,100">회사로부터 (link-reveal: &quot;전화가 왔다.&quot;)[전화가 왔다.
+
+&quot;이유 없이 5회 이상 결근하시다니, 정말 실망입니다.&quot;
+
+회사에서 나에 대한 신뢰는 사라졌다.
+
+(link: &quot;전화 끊기&quot;)[(set: $money to $money - 100)(go-to: &quot;첫째&quot;)]
+
+
+
+</tw-passagedata><tw-passagedata pid="65" name="방치우기" tags="" position="967.3333231608073,4123.333333333334" size="100,100">- (link: &quot;방을 치운다&quot;)[(set: $exp to $exp + 10)(set: $health to $health + 5)(set: $time to $time + 2)(go-to: &quot;첫째&quot;)]
+1회 수행시 건강 +5
+3회 연속 미수행시 건강 -10</tw-passagedata><tw-passagedata pid="66" name="NPC1" tags="" position="1327.2000122070312,253" size="100,100">&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	img-align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/HcSKWDD.png&quot;&gt;
+&lt;/div&gt;
+
+나는 [NPC]&lt;getNPC|다.
+
+(click: ?getNPC)[&lt;b&gt;Non-Playable Character.&lt;/b&gt;
+[플레이할 수 없는]&lt;getNP| 캐릭터라고 부른다.]
+
+(click: ?getNP)[내가 하는 일은
+유저가 말을 걸면 퀘스트를 주는 일이다.
+그리고 보상도 준다.]
+
+[[다음]]</tw-passagedata><tw-passagedata pid="67" name="결론" tags="" position="1329.2000122070312,479" size="100,100">&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/TEvsuN4.png&quot;&gt;
+&lt;/div&gt;
+
+보통은 이런 식이다.
+
+(text-style: &quot;italic&quot;)[서쪽 입구에서 악마들이 밤중에 마을을 기습했다..
+주민들을] (link-reveal: &quot;도와주....&quot;)[
+
+&lt;div id=&quot;quest&quot;&gt;&lt;p&gt;&lt;b&gt;메인 퀘스트1&lt;/b&gt;
+외곽에 출몰한 악마 10마리를 처치하시오.&lt;/p&gt;&lt;/div&gt;
+
+[퀘스트 수락]&lt;getAccect|]
+
+(click: ?getAccect)[이렇게 퀘스트를 주면
+사람들은 착실하게 일을 해온다.
+물론 그 이유는 (link: &quot;바로&quot;)[[[보상]]에 있다]]
+
+
+
+
+</tw-passagedata><tw-passagedata pid="68" name="보상" tags="" position="1356.2000122070312,637" size="100,100">&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	img-align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/HcSKWDD.png&quot;&gt;
+&lt;/div&gt;
+
+지겨운 생활...
+
+청산할 것이다. 오늘.
+
+- [[퀘스트에 변화]]
+
+- [[보상에 변화]]
+</tw-passagedata><tw-passagedata pid="69" name="퀘스트에 변화" tags="" position="1213.2000122070312,766" size="100,100">&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/bVoioQI.png&quot;&gt;
+&lt;/div&gt;
+
+마침 저기 사람이 나를 찾으러 온다.
+
+안녕하세요.. 저는 NPC입니다. 제 생활에 질려버렸어요. 상품 자판기와 같은 생활에 회의를 느껴...(유저는 읽지 않고 대화를 스킵한다)
+
+당신은 내가 무슨 말을 하고 있는지 읽지도 않..(계속 스킵한다)
+
+이것도 해오는지 어디 보자...(계속 스킵한다)
+
+&lt;div id=&quot;quest&quot;&gt;&lt;p&gt;메인 퀘스트36
+마을을 시계 방향으로 6바퀴 돌고 오세요.&lt;/p&gt;&lt;/div&gt;
+
+[[퀘스트 주기]]
+
+
+</tw-passagedata><tw-passagedata pid="70" name="보상에 변화" tags="" position="1425.2000122070312,764" size="100,100">보상을 주지 않기로 했다.
+
+플레이어
+&quot;퀘스트 완료 요청&quot;
+
+NPC
+&quot;이 퀘스트는 보상이 없습니다. 수고하셨습니다.&quot;
+
+플레이어
+(말 없이 가만히 서있는다)
+
+.
+.
+.
+플레이어의 캐릭터가 화면에서 사라졌다.
+
+[[어디로 간거지?]]</tw-passagedata><tw-passagedata pid="71" name="퀘스트 주기" tags="" position="1218,896" size="100,100">그 플레이어는 저 멀리 가버렸다.
+
+10분 후, 말을 타고 다시 찾아오는 그의 모습이 보인다.
+
+&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/O416NqV.png&quot;&gt;
+&lt;/div&gt;
+&lt;b&gt;&quot;퀘스트 완료&quot;&lt;/b&gt;
+
+아니... 이걸 해온단 말이야.
+보상을 받기 위해서는 어떤 일이라도 할 것 같군.
+
+그럼 어디,
+
+&lt;div id=&quot;quest&quot;&gt;&lt;p&gt;메인 퀘스트37
+몬스터 30마리를 죽이지 말고 [막타]&lt;getLastTa|만 남겨두고 오세요.&lt;/p&gt;&lt;/div&gt;
+
+[[퀘스트 주기2]]
+</tw-passagedata><tw-passagedata pid="72" name="퀘스트 주기2" tags="" position="1226,1023" size="100,100">10분 후, 말을 타고 다시 찾아오는 그의 모습이 보인다.
+
+보상만 준다면 어떤 일이든 하는 사람들이군.
+
+</tw-passagedata><tw-passagedata pid="73" name="어디로 간거지?" tags="" position="1430.2000122070312,899" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="74" name="[보상" tags="" position="1173.2000122070312,480" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="다음" tags="" position="1326.2000122070312,363" size="100,100">&lt;style&gt; img {
+	max-width: 100%;
+	max-height: 100%;
+	align: middle;
+	}
+
+&lt;/style&gt;
+&lt;img src=&quot;https://i.imgur.com/glnZHa6.png&quot;&gt;
+&lt;/div&gt;
+
+(link: &quot;정말 지겹다.&quot;)[하루종일 가만히 서있다가
+말을 걸면 [대화]&lt;getConver|를 하지만]
+
+(click: ?getConver)[나와의 대화는 쓸모없다.
+내가 무슨 말을 하든,
+사람들은 [[결론]]만을 가져간다.]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
