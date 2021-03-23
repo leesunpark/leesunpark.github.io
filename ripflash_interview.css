@@ -1,1 +1,32 @@
 
+body
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+img
+{
+	border: 1px solid;
+	margin: 30px;
+	width: 58%;
+}
+
+.i
+{
+	margin-botton: 20px;
+}
+
+.profile
+{
+	border: 1px solid;
+	margin: 10px;
+	padding: 20px;
+}
+
+.article
+{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
