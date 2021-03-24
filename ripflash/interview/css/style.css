@@ -3,6 +3,7 @@ body
 {
 	padding-left: 10%;
 	padding-right: 10%;
+	font-family: Arial, Dotum, "돋움", sans-serif;
 }
 
 img
@@ -30,3 +31,7 @@ img
 	margin-bottom: 5%;
 }
 
+.title
+{
+	margin-top: 5%;
+}
