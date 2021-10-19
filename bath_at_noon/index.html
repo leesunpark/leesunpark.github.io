@@ -26,985 +26,17 @@
 
 <link rel="stylesheet" type="text/css" href="./files/common.css">
 <link rel="stylesheet" type="text/css" href="./files/news.css">
-		
-<script type="text/javascript" src="./files/news.jindo.js.다운로드" charset="euc-kr"></script>
-<script type="text/javascript" src="./files/news.jquery.js.다운로드" charset="utf-8"></script>
-<script type="text/javascript" src="./files/writeComment.js" charset="euc-kr"></script>
 
-<script type="text/javascript">
-document.domain='naver.com';
-var _MAIN_NEWS_MENU_ID='shm';
-var _MAIN_NEWS_SECTION_ID='103';
-var ccsrv='cc.naver.com';
-var g_ssc='news.art';
-window.nsc = g_ssc; 
-var gnb_service='news';
-var gnb_logout=encodeURIComponent(location.href);
-var gnb_template='gnb_utf8';
-var gnb_brightness = 1;
-var gnb_one_naver = 1;
-var gnb_searchbox='on';
-var gnb_shortnick='on';
-
-var gnb_timestamp = "2021101611";
-</script>
-
-
-<script type="text/javascript" src="./files/news.service.js.다운로드" charset="euc-kr"></script>
-<script type="text/javascript" src="./files/nil.news.js.다운로드" charset="utf-8"></script>
 
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
-<script id="naver-splugin-sdk" type="text/javascript" charset="utf-8" src="./files/splugin.js.다운로드"></script>
-<script type="text/javascript" charset="utf-8" src="./files/reaction.min.js.다운로드"></script>
-<script charset="utf-8" type="text/javascript" src="./files/reaction.basic.js.다운로드"></script>
+
 <link id="naver-splugin-css" rel="stylesheet" type="text/css" href="./files/spi_standard_https.css">
-<script type="text/javascript" charset="utf-8" src="./files/cbox.core.js.다운로드"></script>
-<script type="text/javascript" charset="utf-8" src="./files/tip_pc.js.다운로드"></script>
-<script type="text/javascript" charset="utf-8" src="./files/gnb_utf8"></script>
+
 <style type="text/css" id="_cbox_default_style_"></style>
 <link type="text/css" rel="stylesheet" href="./files/comment_news.css" charset="utf-8">
-<script type="text/javascript" src="./files/cbox.eg.js.다운로드" charset="utf-8"></script>
+
 <style id="gnb_style" type="text/css">@charset "UTF-8";
-/* NTS UIT Development Office YJH 140717 */
-a.gnb_my, .gnb_icon, #gnb .gnb_my_interface, .gnb_my_li .gnb_my_content .gnb_membership, #gnb .gnb_my_membership, #gnb .gnb_ico_num .gnb_ico_new, #gnb .gnb_ico_num .gnb_ico_new .gnb_count, .gnb_lst .ico_arrow, a.gnb_my .filter_mask, .gnb_my_lyr, .gnb_my_li .gnb_my_content .gnb_mask, .gnb_my_li .gnb_my_content .gnb_change, .gnb_my_li .gnb_my_content .gnb_edit_lst li, .gnb_my_li .gnb_my_content .gnb_pay_check em, #gnb .gnb_my_li .gnb_my_community a.gnb_pay span, .gnb_notice_li .gnb_notice_lyr, .gnb_notice_li .svc_list .gnb_ico_mail, .gnb_notice_li .svc_list .gnb_btn_remove span, .gnb_notice_li .svc_list .gnb_btn_remove i, .gnb_notice_li .gnb_error .gnb_ico_error, .gnb_ly_alert .gnb_btn_close i, .gnb_first_visit, .gnb_search_box, .gnb_search_box .gnb_del_txt, .gnb_svc_more .gnb_svc_lstwrp li.gnb_event em.ic_gnb_new, .gnb_svc_more .svc_btnwrp button { background: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v14.png) no-repeat -999px -999px;		background: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v15.png?v=2006) no-repeat -999px -999px; /* background: url(../img/sp_gnb_v15.png) no-repeat -999px -999px; */}
-.gnb_favorite_area, .gnb_search_area, .gnb_banner, .gnb_linkwrp{background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr2_v2.png) no-repeat -999px -999px}
-#gnb .gnb_my_li .gnb_my_community a, .gnb_notice_li .gnb_notice_all, a.gnb_service_all, .gnb_svc_more .svc_btns{display:block;height:38px;border-top:1px solid #ebebeb;background-color:#f8f8f8;text-align:center;font-weight:bold;text-decoration:none;letter-spacing:-1px;line-height:38px}
-#gnb .gnb_my_li .gnb_my_community a:visited, .gnb_notice_li .gnb_notice_all:visited, a.gnb_service_all:visited, .gnb_svc_more .svc_btns:visited{color:#444}
-.gnb_login_li, .gnb_my_li, .gnb_notice_li, .mail_li, .gnb_service_li{float:left;margin-right:2px;overflow:visible}
-.gnb_login_li a, .gnb_my_li a, .gnb_notice_li a, .mail_li a, .gnb_service_li a{position:relative;z-index:100}
-a.gnb_my, .gnb_icon{position:relative}
-#gnb{position:relative;z-index:2147483646;font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,Sans-serif !important;color:#444;font-size:12px;letter-spacing:0 !important;line-height:normal !important;text-align:left !important}
-#gnb div, #gnb p, #gnb span, #gnb em, #gnb strong, #gnb h1, #gnb h2, #gnb h3, #gnb h4, #gnb h5, #gnb h6, #gnb ul, #gnb ol, #gnb li, #gnb dl, #gnb dt, #gnb dd, #gnb table, #gnb th, #gnb td, #gnb form, #gnb fieldset, #gnb legend, #gnb input, #gnb textarea, #gnb button, #gnb label{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,Sans-serif !important}
-#gnb a, #gnb label, #gnb button{cursor:pointer}
-#gnb a, #gnb a:visited, #gnb a:active, #gnb a:focus{color:#444}
-#gnb a:hover{color:#444;text-decoration:underline}
-#gnb input::-ms-clear{display:none}
-#gnb em{font-style:normal}
-#gnb ul{list-style:none}
-#gnb .blind{display:block;overflow:hidden;position:absolute;top:-1000em;left:0;width:1px;height:1px;margin:0;padding:0;font-size:0;line-height:0}
-#gnb .gnb_my_membership{padding: 0;display: block;width: 64px;height: 16px;background-position: -296px -359px;margin: 0;}
-#gnb .gnb_my_interface{padding:5px;position:absolute;top:12px;right:8px;display:block;width:17px;height:16px;background-position:-90px 5px}
-#gnb .gnb_my_interface:hover{background-position:-90px -20px}
-#gnb .gnb_pad_lyr{position:absolute}
-#gnb .gnb_ico_num{display:block;position:absolute;top:1px;width:40px;text-align:center}
-#gnb .gnb_ico_num .gnb_ico_new{height:15px;display:inline-block;background-position:-331px 0;zoom:1}
-#gnb .gnb_ico_num .gnb_ico_new .gnb_count{position:relative;top:0;right:-5px;height:15px;margin:0;padding:0 4px 0 1px;display:inline-block;*display:inline;vertical-align:top;background-position:100% 0;text-indent:-2px;font-family:tahoma !important;font-weight:bold;color:#fff;zoom:1}
-#gnb .gnb_ico_num .gnb_ico_new .plus{margin:1px -1px 0 2px;font-size:8px;display:inline-block;color:#fff;vertical-align:top}
-:root #gnb .gnb_pad_lyr{opacity:1 !important;background:#fff}
-.gnb_lst{margin:0;padding:0;zoom:1}
-.gnb_lst:after{display:block;clear:both;content:''}
-.gnb_lst ul{margin:0;padding:0}
-.gnb_lst .ico_arrow{display:none;position:absolute;left:50%;top:27px;width:10px;height:8px;margin-left:-5px;background-position:-175px -10px}
-.gnb_lyr_opened .gnb_my_lyr, .gnb_lyr_opened .gnb_service_lyr, .gnb_lyr_opened .gnb_notice_lyr, .gnb_lyr_opened .ico_arrow{display:block !important}
-.gnb_login_li{height:23px;padding:5px 7px 0 0}
-.gnb_btn_login, .gnb_bg, .gnb_bdr{display:inline-block;width:46px;height:20px;font-size:12px}
-.gnb_btn_login{position:relative}
-.gnb_bg{background-color: #fff;opacity: 0.05;filter: alpha(opacity=5);}
-.gnb_bdr{position:absolute;top: -1px;left: -1px;width: 46px;height: 20px;border: 1px solid #000;opacity: 0.12;filter: alpha(opacity=12);}
-.gnb_txt{position:absolute;top:0;left:0;width:45px;height:20px;padding-left:1px;line-height:21px;color:#666;text-align:center}
-.gnb_btn_login:hover{text-decoration:none !important}
-.gnb_account .gnb_btn_login{width:54px;margin:-1px 0 0 8px;vertical-align:top}
-.gnb_account a.gnb_btn_login .gnb_txt {padding-left: 0;}
-.gnb_account .gnb_bdr{width:52px}
-.gnb_account .gnb_txt{width:53px}
-.gnb_my_li{margin-right:7px}
-.gnb_my_namebox{padding:2px 9px 0 0;background-repeat:no-repeat;background-position:100% 50%;zoom:1}
-.gnb_my_namebox:after{display:block;clear:both;content:''}
-a.gnb_my{float:left;display:block;font-size:12px;vertical-align:middle}
-a.gnb_my .filter_mask {position: absolute; top: -1px; left: -1px; z-index: 1; width: 28px; height: 28px; background-position: -260px -60px;}
-a.gnb_my img{vertical-align:top;border-radius:16px}
-a.gnb_my .gnb_name{margin-right:-1px;padding-left:5px;display:inline-block;height:28px;line-height:28px;vertical-align:top;font-size:11px;color:#444}
-a.gnb_my:visited{color:#444}
-a.gnb_my:hover, a.gnb_my:active, a.gnb_my:visited, a.gnb_my:focus{text-decoration:none !important}
-a.gnb_my:hover .gnb_name{text-decoration:underline}
-a.gnb_my .ico_arrow{top:25px;margin-left:8px}
-.gnb_my_namebox a.gnb_emp{float:left;display:inline-block;height:28px;margin-left:3px;line-height:28px;font-size:11px;color:#777 !important}
-.gnb_my_lyr{display:none;position:absolute;top:26px;right:-8px;padding:9px 5px 4px 4px;width:316px;height:155px;background-position:-2px -1310px;z-index:10}
-.gnb_my_lyr.gnb_groupid{height:144px;background-position:-2px -1500px}
-.gnb_my_lyr.gnb_groupid .gnb_my_content{height:80px}
-.gnb_my_lyr.gnb_groupid.gnb_longid1{height:144px;/*background-position:-2px -1664px*/}
-.gnb_my_lyr.gnb_groupid.gnb_longid2{height:144px;background-position:-2px -1828px}
-.gnb_my_lyr.gnb_longid1{/*width:318px;*/ /*background-position:-2px -1118px;*/}
-.gnb_my_lyr.gnb_longid2{width:348px;background-position:-2px -926px}
-.gnb_my_li .gnb_my_content{zoom:1;height:91px;padding:15px 0 10px 15px}
-.gnb_my_li .gnb_my_content:after{display:block;clear:both;content:''}
-.gnb_my_li .gnb_my_content .gnb_img_area{float:left;position:relative;display:block;width:80px;margin: 1px 0 0 1px;}
-.gnb_my_li .gnb_my_content .gnb_img_area img{vertical-align:top}
-.gnb_my_li .gnb_my_content .gnb_mask{position:absolute;top:0;left:0;display:block;width:80px;height:80px;background-position:-70px -60px}
-.gnb_my_li .gnb_my_content .gnb_change{position:absolute;bottom:-2px;left:-2px;display:block;width:28px;height:28px;background-position:-140px 0px}
-.gnb_my_li .gnb_my_content .gnb_change:hover{background-position:-140px -30px}
-.gnb_my_li .gnb_my_content .gnb_txt_area{float:left;width:210px;margin:0 0 0 10px}
-.gnb_longid1 .gnb_my_content .gnb_txt_area{/* width:210px; */}
-.gnb_longid2 .gnb_my_content .gnb_txt_area{width:235px}
-.gnb_my_li .gnb_my_content .gnb_account{margin-bottom:3px 0 1px;font-size:0}
-.gnb_my_li .gnb_my_content .gnb_name{color:#666;font-size:14px}
-.gnb_my_li .gnb_my_content .gnb_name a{display:inline-block;vertical-align:top;font-weight:bold;color:#222 !important}
-.gnb_my_li .gnb_my_content a.gnb_mail_address{margin-left:1px;font-family:tahoma;color:#666 !important;font-size:12px}
-.gnb_my_li .gnb_my_content .gnb_edit_lst{zoom:1;margin-top:7px !important}
-.gnb_my_li .gnb_my_content .gnb_edit_lst:after{display:block;clear:both;content:''}
-.gnb_my_li .gnb_my_content .gnb_edit_lst li{float:left;padding-left:6px;margin-left:5px;background-position:-290px -25px}
-.gnb_my_li .gnb_my_content .gnb_edit_lst li.gnb_info{padding-left:0;margin-left:0;background:none}
-.gnb_my_li .gnb_my_content .gnb_edit_lst a{color:#666 !important;letter-spacing:-1px}
-.gnb_my_li .gnb_my_content .gnb_membership {display: inline-block;margin-right: 5px;margin-left: 1px;padding-right: 8px;background-position: -287px -403px;}
-.gnb_my_li .gnb_my_content .gnb_pay_check{height:16px;margin:7px -4px 0 0 !important}
-@media screen and (min-width: 0\0) { .gnb_my_li .gnb_my_content .gnb_pay_check{margin-top:17px} }
-.gnb_my_li .gnb_my_content .gnb_pay_check em{display:inline-block;width:16px;height:16px;background-position:-300px -309px;margin:0 4px 0 0;overflow:hidden;font-size:0;line-height:0;vertical-align:top}
-.gnb_my_li .gnb_my_content .gnb_pay_check a{font-size:14px;letter-spacing:-1px;line-height:16px;vertical-align:top}
-.gnb_my_li .gnb_my_content .gnb_pay_check span{font-weight: bold;}
-.gnb_my_li .gnb_my_content .gnb_pay_check strong{font-family:tahoma;letter-spacing:0;vertical-align:top;}
-.gnb_my_li .gnb_my_content .gnb_pay_check a, .gnb_my_li .gnb_my_content .gnb_pay_check span, .gnb_my_li .gnb_my_content .gnb_pay_check strong{font-size:12px;color:#222 !important}
-#gnb .gnb_my_li .gnb_my_community{clear:both;zoom:1}
-#gnb .gnb_my_li .gnb_my_community:after{display:block;clear:both;content:''}
-#gnb .gnb_my_li .gnb_my_community a{float:left;width:106px;margin-right: 0;border-right:1px solid #ebebeb}
-#gnb .gnb_my_li .gnb_my_community a.gnb_pay{width:102px;border-right:0;line-height:0}
-#gnb .gnb_my_li .gnb_my_community a.gnb_pay span{display:inline-block;width:41px;height:16px;background-position:-300px -334px;margin:11px auto 0;font-size:0;line-height:0}
-#gnb .gnb_my_li .gnb_my_community a:active, #gnb .gnb_my_li .gnb_my_community a:focus, #gnb .gnb_my_li .gnb_my_community a:visited{text-decoration:none !important}
-#gnb .gnb_my_li .gnb_my_community a:hover{text-decoration:underline !important}
-#gnb .gnb_my_lyr.gnb_longid1 .gnb_my_community a{/*width:105px;*/}
-#gnb .gnb_my_lyr.gnb_longid1 .gnb_my_community a.gnb_pay{/* width:106px;*/}
-#gnb .gnb_my_lyr.gnb_longid2 .gnb_my_community a{width:115px}
-#gnb .gnb_my_lyr.gnb_longid2 .gnb_my_community a.gnb_pay{width:116px}
-#gnb.gnb_one .gnb_my_community a, #gnb.gnb_one_small .gnb_my_community a{margin-right: 0 !important;}
-.gnb_notice_li a.gnb_notice{display:block;width:15px;height:17px;padding:7px 9px 4px;text-decoration:none !important}
-.gnb_notice_li a.gnb_notice .gnb_ico_num{left:1px;top:0}
-.gnb_notice_li a.gnb_notice .gnb_icon{display:block;width:15px;height:17px;background-position:-3px -60px}
-.gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-38px -60px;text-decoration:none !important}
-.gnb_notice_li .gnb_notice_lyr{display:none;position:absolute;top:26px;right:-7px;width:297px;height:330px;padding:9px 4px 4px;background-position:-2px -584px;z-index:10;overflow:hidden}
-.gnb_notice_li .svc_scroll{height:291px;overflow:scroll;overflow-x:hidden;position:relative;zoom:1}
-.gnb_notice_li .svc_panel{width:100%;height:330px;overflow:hidden}
-.gnb_notice_li .svc_head{position:relative;height:36px;padding-left:15px;line-height:20px;border-bottom:1px solid #eaeaea;zoom:1}
-.gnb_notice_li .svc_head .gnb_tit{color:#6b6d70;margin-right:1px;line-height:36px}
-.gnb_notice_li .svc_head .task_right{position:absolute;right:8px;top:8px;font-size:0}
-.gnb_notice_li .svc_head .task_right button{height:20px;padding:0 6px;margin-left:4px;border:1px solid #ddd;color:#888;background-color:#fff;font-family:'나눔고딕', NanumGothic;font-size:12px;letter-spacing:-1px;line-height:18px;*line-height:16px;overflow:visible}
-.gnb_notice_li .svc_list .gnb_btn_remove i, .gnb_notice_li .svc_list .gnb_btn_remove span, .gnb_notice_li .svc_noti .gnb_ico_mail, .gnb_notice_li .svc_blank .svc_msg_box, .gnb_notice_li .svc_blank .gnb_v_guide{display:inline-block;*display:inline;*zoom:1}
-.gnb_notice_li .svc_list{margin-top:-1px}
-.gnb_notice_li .svc_list li{position:relative;padding:7px 34px 7px 15px;border-top:1px solid #eaeaea;line-height:18px}
-.gnb_notice_li .svc_list .gnb_new{background:#ffffd8}
-.gnb_notice_li .svc_list .gnb_unread .gnb_subject{color:#444}
-.gnb_notice_li .svc_list .gnb_unread .d_cnt{color:#ff630e}
-.gnb_notice_li .svc_list .gnb_unread a:hover .gnb_subject, .gnb_notice_li .svc_list .gnb_unread .gnb_unread a:hover .d_cnt{color:#390}
-.gnb_notice_li .svc_list .gnb_unread .svc_name{color:#444}
-.gnb_notice_li .svc_list a.gnb_list_cover{text-decoration:none !important;display:block;position:relative;zoom:1}
-.gnb_notice_li .svc_list a:hover .gnb_subject{text-decoration:underline}
-.gnb_notice_li .svc_list .gnb_subject{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;color:#adadad}
-.gnb_notice_li .svc_list .d_cnt{font-family:tahoma;font-size:10px}
-.gnb_notice_li .svc_list .gnb_info{color:#adadad}
-.gnb_notice_li .svc_list .svc_name{margin-right:3px;color:#adadad}
-.gnb_notice_li .svc_list .cchr{margin-right:3px}
-.gnb_notice_li .svc_list .dona{position:absolute;top:8px;right:34px;text-decoration:underline}
-.gnb_notice_li .svc_list .dona a{color:#adadad}
-.gnb_notice_li .svc_list .dona a:hover{color:#390}
-.gnb_notice_li .svc_list .gnb_ico_mail{width:14px;height:15px;font-size:0;line-height:0;color:#fff;vertical-align:top}
-.gnb_notice_li .svc_list .gnb_ico_mail.gnb_yes{background-position:-245px -17px}
-.gnb_notice_li .svc_list .gnb_ico_mail.gnb_no{background-position:-245px 4px}
-.gnb_notice_li .svc_list .gnb_btn_remove{position:absolute;right:4px;top:50%;z-index:100;margin-top:-13px;padding:10px;line-height:6px;font-size:0;background:none !important;border:0 !important}
-.gnb_notice_li .svc_list .gnb_btn_remove span, .gnb_notice_li .svc_list .gnb_btn_remove i{display:block !important;width:7px;height:7px;font-size:0;line-height:0;color:transparent;white-space:nowrap;overflow:hidden;vertical-align:top;background-position:-175px 0}
-.gnb_notice_li .svc_blank{position:absolute;top:104px;left:0;width:100%;white-space:nowrap;height:100px;font-size:0;text-align:center}
-.gnb_notice_li .svc_blank .svc_msg_box{white-space:normal;font-size:12px;width:100%}
-.gnb_notice_li .svc_blank .gnb_tit{display:block;color:#2f3743;font-size:14px;margin:0 0 15px}
-.gnb_notice_li .svc_blank .gnb_tit strong{font-weight:normal;color:#390}
-.gnb_notice_li .svc_blank .gnb_desc{line-height:19px;color:#2f3743;margin-bottom:7px}
-.gnb_notice_li .svc_blank .gnb_desc a, .gnb_notice_li .svc_blank .gnb_link{color:#390;text-decoration:underline}
-.gnb_notice_li .svc_blank .gnb_v_guide{vertical-align:middle;height:100%;width:0}
-.gnb_notice_li .svc_blank .gnb_link_wrap{text-align:center}
-.gnb_notice_li .svc_blank .gnb_link_wrap .gnb_link{display:block;width:40px;margin:0 auto !important;text-align:center}
-.gnb_notice_li .svc_loading{background:url(https://ssl.pstatic.net/static/www/2014/loading.gif) no-repeat #fff center center;position:absolute;top:33px;left:0;width:100%;height:245px}
-.gnb_notice_li .gnb_error{position:absolute;top:81px;left:2px;width:100%;color:#444;text-align:center}
-.gnb_notice_li .gnb_error .gnb_ico_error{display:inline-block;width:57px;height:57px;background-position:-280px -190px}
-.gnb_notice_li .gnb_error .gnb_tit{font-size:14px;margin:15px 0 11px}
-.gnb_notice_li .gnb_error .gnb_desc{margin-bottom:13px;line-height:18px}
-.gnb_notice_li .gnb_error .gnb_link{text-decoration:underline}
-.gnb_ly_alert{position:absolute;top:110px;left:13px;background-color:#fff;border:1px solid #b7b9bc;width:260px;padding:34px 0 20px;zoom:1;z-index:100}
-.gnb_ly_alert .gnb_msg{text-align:center;line-height:17px;margin-bottom:14px;color:#2f3743}
-.gnb_.ly_alert .gnb_btn_close{position:absolute;right:2px;top:0;*overflow:visible}
-.gnb_ly_alert .gnb_btns{text-align:center}
-.gnb_ly_alert .gnb_btns button{height:27px;line-height:27px;*line-height:22px;font-weight:bold;font-size:12px;padding:0 8px;color:#2f3743;border:1px solid #ddd;background-color:white}
-.gnb_ly_alert .gnb_btns button:first-child{margin-right:4px}
-.gnb_ly_alert .gnb_btn_close{position:absolute;right:2px;top:0;width:35px;border:0;background:none;cursor:pointer;border-radius:0;padding:10px}
-.gnb_ly_alert .gnb_btn_close i{display:block;width:15px;height:15px;font:0/0 a;color:transparent;white-space:nowrap;overflow:hidden;vertical-align:top;background-position:-240px -60px}
-.mail_li a.gnb_mail{display:block;width:20px;height:15px;padding:7px 9px 6px;text-decoration:none !important}
-.mail_li a.gnb_mail .gnb_icon{display:block;width:20px;height:15px;background-position:0px -95px}
-.mail_li a.gnb_mail:hover .gnb_icon{background-position:-35px -95px;text-decoration:none !important}
-.mail_li .gnb_ico_num{left:6px;top:0}
-.gnb_service_li{margin-right:0}
-.gnb_service_li a.gnb_service{display:block;width:16px;height:16px;padding:7px 9px 5px}
-.gnb_service_li a.gnb_service .gnb_icon{display:block;width:16px;height:16px;background-position:-2px -130px}
-.gnb_service_li a.gnb_service:hover .gnb_icon{background-position:-37px -130px;text-decoration:none !important}
-.gnb_service_li .gnb_service_lyr{display:none;position:absolute;top:27px;right:-7px;z-index:10}
-.gnb_favorite_search{width:301px;letter-spacing:-1px}
-.gnb_response .gnb_favorite_search{display:none}
-.gnb_favorite_area{height:93px;padding:8px 4px 0;background-position:0 0}
-.gnb_favorite_lstwrp{position:relative;padding:22px 1px 15px 15px;border-bottom:1px solid #ebebeb}
-.gnb_favorite_lstwrp .gnb_my_interface{top:3px !important;right:3px !important}
-.gnb_first_visit{position:absolute;top:0;left:0;width:293px;height:92px;background-position:0 -310px;z-index:200}
-.gnb_first_visit .gnb_close{position:absolute;top:0;right:0;display:block;width:32px;height:32px}
-.gnb_favorite_lst{zoom:1}
-.gnb_favorite_lst:after{display:block;clear:both;content:''}
-.gnb_favorite_lst li{float:left;width:65px;text-align:center;white-space:nowrap}
-.gnb_favorite_lst a{display:inline-block;text-align:center;font-weight:bold}
-.gnb_favorite_lst .gnb_add a{display:block;test-align:center;}
-.gnb_favorite_lst .gnb_add a span.ic_add{display:block;width:36px;height:36px;margin:0 auto 4px;background-image: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_4b16e6.png);background-position: 0px 0px;background-repeat: no-repeat;width: 36px;height: 36px;vertical-align: top;}
-.gnb_favorite_lst .gnb_add a:hover span.ic_add{background-image: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_4b16e6.png);background-position: -42px 0px;background-repeat: no-repeat;width: 36px;height: 36px;vertical-align: top;}
-.gnb_favorite_lst img{display:block;margin:0 auto 4px;vertical-align:top}
-.gnb_search_area{position:relative;z-index:200;padding:18px 4px 17px;background-position:-301px 0;background-repeat:repeat-y}
-.gnb_search_box{position:relative;z-index:101;margin:0 12px 16px 0;padding-left:10px;display:block;width:270px;height:35px;background-position:10px -190px}
-.gnb_search_box.over{background-position:10px -230px}
-.gnb_search_box.fcs{background-position:10px -270px}
-.gnb_search_box.fcs input{width:200px;font-size:16px;font-weight:bold;color:#444;outline:0}
-.gnb_search_box input{float:left;display:block;width:210px;height:22px;margin-top:6px;padding-left:10px;font-family:'나눔고딕',NamumGothic;letter-spacing:-1px;color:#adadad;font-size:13px;border:0;line-height:22px;background:transparent}
-.gnb_search_box .gnb_del_txt{position:absolute;top:8px;right:32px;display:block;width:17px;height:17px;background-position:-190px 0px}
-.gnb_search_box .gnb_del_txt:hover{background-position:-190px -20px}
-.gnb_search_box .gnb_pop_input{position:absolute;top:34px;left:10px;width:268px;height:170px;*height:172px;border:1px solid #cbc5c5;border-top:0;background:#fff;overflow-x:hidden;overflow-y:scroll;z-index:110}
-.gnb_search_box .gnb_pop_lst{padding:4px 0 2px}
-.gnb_search_box .gnb_pop_lst a{display:block;padding:6px 0 6px 10px;font-weight:bold}
-.gnb_search_box .gnb_pop_lst .on{background-color:#f5f5f5}
-.gnb_search_lstwrp{zoom:1;height:118px;padding-left:12px}
-.gnb_search_lstwrp:after{display:block;clear:both;content:''}
-.gnb_search_lstwrp .gnb_search_lst{float:left;width:69px;border-left:1px solid #eaeaea}
-.gnb_search_lstwrp .gnb_search_lst.gnb_first{width:64px;border:0}
-.gnb_search_lstwrp li{padding:12px 0 0 8px}
-.gnb_search_lstwrp li.gnb_first{font-weight:bold;padding-top:0}
-.gnb_search_lstwrp li a{display:inline-block;vertical-align:top}
-.gnb_banner{height:47px;margin:0;padding:0 18px;background-position:-301px 0;background-repeat:repeat-y}
-.gnb_banner .gnb_service_event{display:inline-block;border-top:1px solid #ebebeb}
-.gnb_linkwrp{padding:0 4px 4px;background-position:-602px 0}
-a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.gnb_service_all:focus{text-decoration:none}
-.gnb_svc_more{display:none;position:absolute;top:4px;right:303px;width:589px;overflow:hidden;zoom:1;z-index:1000}
-.gnb_svc_more:after{display:block;clear:both;content:''}
-.gnb_response .gnb_svc_more{right:2px}
-.gnb_bg_top{height:6px;background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr1_v2.png) no-repeat}
-.gnb_bg_btm{position:relative;height:6px;background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr1_v2.png) no-repeat -1282px 0}
-.gnb_svc_more .gnb_svc_hd{position:relative;padding:0 18px 2px 23px;letter-spacing:-1px;background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr1_v2.png) repeat-y -641px 0}
-.gnb_svc_more .gnb_svc_hd .gnb_svc_tit{display:block;padding:12px 0 13px;border-bottom:1px solid #ebebeb;font-size:14px;color:#222}
-.gnb_svc_more .gnb_svc_hd .link{position:absolute;top:14px;right:19px;font-size:12px;color:#444}
-.gnb_svc_more .gnb_svc_hd .link a{color:#444 !important;line-height:16px !important}
-.gnb_svc_more .gnb_svc_lstwrp{position:relative;height:283px;overflow:hidden;padding:15px 15px 0 20px;letter-spacing:-1px;background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr1_v2.png) repeat-y -641px 0;zoom:1}
-.gnb_svc_more .gnb_svc_lstwrp:after{display:block;clear:both;content:''}
-.gnb_svc_more .gnb_svc_lstwrp li{height:15px;margin-bottom:5px;color:#6b6d70;white-space:nowrap;line-height:15px}
-.gnb_svc_more .gnb_svc_lstwrp li.gnb_event label{color:#444;font-weight:bold}
-.gnb_svc_more .gnb_svc_lstwrp li.gnb_event em.ic_gnb_new{display:inline-block;width:11px;height:11px;background-position:-215px 0px;margin:2px 0 0 4px;font-size:0;line-height:0;vertical-align:top}
-@media screen and (min-width: 0\0) { .gnb_svc_more .gnb_svc_lstwrp li.gnb_event em.ic{margin-top:3px} }
-.gnb_svc_more .gnb_svc_lstwrp .gnb_input_check{width:13px;height:13px;margin:2px 3px 0 3px;padding:0;vertical-align:top;-webkit-appearance:checkbox;}
-.gnb_svc_more .gnb_svc_lstwrp label{vertical-align:0px}
-.gnb_svc_more .gnb_svc_lstwrp .gnb_disabled strong{color:#a8acb0}
-.gnb_svc_more .gnb_svc_lstwrp .gnb_disabled li{color:#cbcbcb}
-.gnb_svc_more .gnb_svc_lst1{float:left;width:328px;height:280px}
-.gnb_svc_more .gnb_svc_lst1 ul{float:left;width:102px;min-height:260px;padding:5px 0 0 10px;border-left:1px solid #eee}
-.gnb_svc_more .gnb_svc_lst1 ul.gnb_first{padding-left:0;border:0}
-.gnb_svc_more .svc_lst2{float:left;position:relative;width:221px;border:1px solid #eee;background:#fbfbfb;zoom:1}
-.gnb_svc_more .svc_lst2:after{display:block;clear:both;content:''}
-.gnb_svc_more .svc_spc{float:left;position:relative;width:100px;min-height:254px;padding:9px 0 0 10px}
-.gnb_svc_more .svc_spc.gnb_first{border-right:1px solid #eee}
-.gnb_svc_more .svc_spc strong{height:20px;color:#2f3743;line-height:16px}
-.gnb_svc_more .svc_spc a:visited{color:#2f3743}
-.gnb_svc_more .svc_spc ul{padding:8px 0}
-.gnb_svc_more .svc_spc li{margin-bottom:0;padding-bottom:5px;color:#848689}
-.gnb_svc_more .svc_stroy{width:89px;margin-top:-5px;padding:12px 0 0;border-top:1px solid #eee}
-.gnb_svc_more .svc_btns{position:relative;height:33px;overflow:hidden;padding-top:5px;line-height:normal}
-.gnb_svc_more .svc_btnwrp{position:relative;*height:39px;background:url(https://ssl.pstatic.net/static/common/gnb/2014/bg_svclyr1_v2.png) repeat-y -641px 0;padding:0 2px 0 4px}
-.gnb_svc_more .svc_btnwrp button{display:inline-block;width:60px;height:25px;border:0;vertical-align:top}
-.gnb_svc_more .svc_btnwrp .gnb_save{background-position:0 -160px}
-.gnb_svc_more .svc_btnwrp .gnb_close{margin-left:1px;background-position:-65px -160px}
-.gnb_svc_more .svc_btnwrp .gnb_return{position:absolute;top:5px;left:15px;background-position:-130px -160px}
-.gnb_type2 .gnb_notice_li a.gnb_notice .gnb_icon{background-position:-155px -120px}
-.gnb_type2 .gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-155px -140px}
-.gnb_type2 .gnb_service_li .gnb_service .gnb_icon{background-position:-200px -120px}
-.gnb_type2 .gnb_service_li .gnb_service:hover .gnb_icon{background-position:-200px -140px}
-.gnb_type2 .mail_li a.gnb_mail .gnb_icon{background-position:-175px -120px}
-.gnb_type2 .mail_li a.gnb_mail:hover .gnb_icon{background-position:-175px -140px}
-.gnb_dark .gnb_my_li .gnb_my .gnb_name, .gnb_dark .gnb_login_li .gnb_btn_login .gnb_txt{color:#fff}
-.gnb_dark .gnb_notice_li a.gnb_notice .gnb_icon{background-position:-220px -140px}
-.gnb_dark .gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-220px -120px}
-.gnb_dark .mail_li a.gnb_mail .gnb_icon{background-position:-238px -141px}
-.gnb_dark .mail_li a.gnb_mail:hover .gnb_icon{background-position:-238px -121px}
-.gnb_dark .gnb_service_li .gnb_service .gnb_icon{background-position:-261px -140px}
-.gnb_dark .gnb_service_li .gnb_service:hover .gnb_icon{background-position:-261px -120px}
-.gnb_dark_type2 .gnb_my_li .gnb_my .gnb_name, .gnb_dark_type2 .gnb_login_li .gnb_btn_login .gnb_txt{color:#fff}
-.gnb_dark_type2 .gnb_notice_li a.gnb_notice .gnb_icon{background-position:-220px -120px}
-.gnb_dark_type2 .gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-220px -140px}
-.gnb_dark_type2 .mail_li a.gnb_mail .gnb_icon{background-position:-238px -121px}
-.gnb_dark_type2 .mail_li a.gnb_mail:hover .gnb_icon{background-position:-238px -141px}
-.gnb_dark_type2 .gnb_service_li .gnb_service .gnb_icon{background-position:-261px -120px}
-.gnb_dark_type2 .gnb_service_li .gnb_service:hover .gnb_icon{background-position:-261px -140px;}
-.gnb_dark .gnb_notice_li a.gnb_notice, .gnb_dark_type2 .gnb_notice_li a.gnb_notice {width: 17px;height: 19px;padding: 6px 8px 3px;}
-.gnb_dark .gnb_notice_li a.gnb_notice .gnb_icon, .gnb_dark_type2 .gnb_notice_li a.gnb_notice .gnb_icon {width: 17px;height: 19px;}
-.gnb_dark .mail_li a.gnb_mail, .gnb_dark_type2 .mail_li a.gnb_mail {width: 22px;height: 16px;padding: 7px 8px 4px;}
-.gnb_dark .mail_li a.gnb_mail .gnb_icon, .gnb_dark_type2 .mail_li a.gnb_mail .gnb_icon {width: 22px;height: 16px;}
-.gnb_dark .gnb_service_li a.gnb_service, .gnb_dark_type2 .gnb_service_li a.gnb_service {width: 18px;height: 18px;padding: 6px 8px 4px;}
-.gnb_dark .gnb_service_li .gnb_service .gnb_icon, .gnb_dark_type2 .gnb_service_li .gnb_service .gnb_icon {width: 18px;height: 18px;}
-#gnb.gnb_one .gnb_my_li .gnb_my .gnb_name, #gnb.gnb_one_small .gnb_my_li .gnb_my .gnb_name, #gnb.gnb_one .gnb_login_li .gnb_btn_login .gnb_txt, #gnb.gnb_one_small .gnb_login_li .gnb_btn_login .gnb_txt{color:#fff}
-#gnb.gnb_one .gnb_login_li, #gnb.gnb_one_small .gnb_login_li {height: 28px;}
-#gnb.gnb_one .gnb_login_li .gnb_btn_login, #gnb.gnb_one_small .gnb_login_li .gnb_btn_login, #gnb.gnb_one .gnb_login_li .gnb_bg, #gnb.gnb_one_small .gnb_login_li .gnb_bg, #gnb.gnb_one .gnb_login_li .gnb_bdr, #gnb.gnb_one_small .gnb_login_li .gnb_bdr, #gnb.gnb_one .gnb_login_li .gnb_txt, #gnb.gnb_one_small .gnb_login_li .gnb_txt {width: 53px;height: 23px;}
-#gnb.gnb_one .gnb_login_li .gnb_btn_login .gnb_txt, #gnb.gnb_one_small .gnb_login_li .gnb_btn_login .gnb_txt {top: -1px;width: 53px;height: 23px;line-height: 28px;font-size: 11px;}
-#gnb.gnb_one .gnb_login_li, #gnb.gnb_one_small .gnb_login_li, #gnb.gnb_one .gnb_my_li, #gnb.gnb_one_small .gnb_my_li, #gnb.gnb_one .gnb_notice_li, #gnb.gnb_one_small .gnb_notice_li, #gnb.gnb_one .mail_li, #gnb.gnb_one_small .mail_li, #gnb.gnb_one .gnb_service_li, #gnb.gnb_one_small .gnb_service_li{margin-right: 0;margin-left: 0; background: url(https://ssl.pstatic.net/static/common/gnb/bg_one_line.png) repeat-y right 0;}
-#gnb.gnb_one .gnb_login_li a, #gnb.gnb_one_small .gnb_login_li a, #gnb.gnb_one .gnb_my_li a, #gnb.gnb_one_small .gnb_my_li a, #gnb.gnb_one .gnb_notice_li a, #gnb.gnb_one_small .gnb_notice_li a, #gnb.gnb_one .mail_li a, #gnb.gnb_one_small .mail_li a, #gnb.gnb_one .gnb_service_li a, #gnb.gnb_one_small .gnb_service_li a {margin-right: 1px;}
-#gnb.gnb_one .gnb_login_li.hover .gnb_service, #gnb.gnb_one_small .gnb_login_li.hover .gnb_service, #gnb.gnb_one .gnb_login_li.hover .gnb_notice, #gnb.gnb_one_small .gnb_login_li.hover .gnb_notice, #gnb.gnb_one .gnb_login_li.hover .gnb_mail, #gnb.gnb_one_small .gnb_login_li.hover .gnb_mail, #gnb.gnb_one .gnb_login_li.hover .gnb_service, #gnb.gnb_one_small .gnb_login_li.hover .gnb_service, #gnb.gnb_one .gnb_my_li.hover .gnb_service, #gnb.gnb_one_small .gnb_my_li.hover .gnb_service, #gnb.gnb_one .gnb_my_li.hover .gnb_notice, #gnb.gnb_one_small .gnb_my_li.hover .gnb_notice, #gnb.gnb_one .gnb_my_li.hover .gnb_mail, #gnb.gnb_one_small .gnb_my_li.hover .gnb_mail, #gnb.gnb_one .gnb_my_li.hover .gnb_service, #gnb.gnb_one_small .gnb_my_li.hover .gnb_service, #gnb.gnb_one .gnb_notice_li.hover .gnb_service, #gnb.gnb_one_small .gnb_notice_li.hover .gnb_service, #gnb.gnb_one .gnb_notice_li.hover .gnb_notice, #gnb.gnb_one_small .gnb_notice_li.hover .gnb_notice, #gnb.gnb_one .gnb_notice_li.hover .gnb_mail, #gnb.gnb_one_small .gnb_notice_li.hover .gnb_mail, #gnb.gnb_one .gnb_notice_li.hover .gnb_service, #gnb.gnb_one_small .gnb_notice_li.hover .gnb_service, #gnb.gnb_one .mail_li.hover .gnb_service, #gnb.gnb_one_small .mail_li.hover .gnb_service, #gnb.gnb_one .mail_li.hover .gnb_notice, #gnb.gnb_one_small .mail_li.hover .gnb_notice, #gnb.gnb_one .mail_li.hover .gnb_mail, #gnb.gnb_one_small .mail_li.hover .gnb_mail, #gnb.gnb_one .mail_li.hover .gnb_service, #gnb.gnb_one_small .mail_li.hover .gnb_service, #gnb.gnb_one .gnb_service_li.hover .gnb_service, #gnb.gnb_one_small .gnb_service_li.hover .gnb_service, #gnb.gnb_one .gnb_service_li.hover .gnb_notice, #gnb.gnb_one_small .gnb_service_li.hover .gnb_notice, #gnb.gnb_one .gnb_service_li.hover .gnb_mail, #gnb.gnb_one_small .gnb_service_li.hover .gnb_mail, #gnb.gnb_one .gnb_service_li.hover .gnb_service, #gnb.gnb_one_small .gnb_service_li.hover .gnb_service {background: url(https://ssl.pstatic.net/static/common/gnb/bg_one_hover.png) repeat 0 0;}
-#gnb.gnb_one .gnb_my_li .gnb_my .gnb_name, #gnb.gnb_one_small .gnb_my_li .gnb_my .gnb_name{margin:0 0 0 1px;}
-#gnb.gnb_one .gnb_notice_li a.gnb_notice, #gnb.gnb_one_small .gnb_notice_li a.gnb_notice{width:17px;height:19px}
-#gnb.gnb_one .gnb_notice_li a.gnb_notice .gnb_icon, #gnb.gnb_one_small .gnb_notice_li a.gnb_notice .gnb_icon{width:17px;height:19px;background-position:-284px -119px}
-#gnb.gnb_one .gnb_notice_li a.gnb_notice:hover .gnb_icon, #gnb.gnb_one_small .gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-284px -119px}
-#gnb.gnb_one .mail_li a.gnb_mail, #gnb.gnb_one_small .mail_li a.gnb_mail{width:21px;height:17px}
-#gnb.gnb_one .mail_li a.gnb_mail .gnb_icon, #gnb.gnb_one_small .mail_li a.gnb_mail .gnb_icon{width:21px;height:17px;background-position:-302px -120px}
-#gnb.gnb_one .mail_li a.gnb_mail:hover .gnb_icon, #gnb.gnb_one_small .mail_li a.gnb_mail:hover .gnb_icon{background-position:-302px -120px}
-#gnb.gnb_one .gnb_service_li .gnb_service, #gnb.gnb_one_small .gnb_service_li .gnb_service{width:17px;height:17px}
-#gnb.gnb_one .gnb_service_li .gnb_service .gnb_icon, #gnb.gnb_one_small .gnb_service_li .gnb_service .gnb_icon{width:17px;height:17px;background-position:-324px -120px}
-#gnb.gnb_one .gnb_service_li .gnb_service:hover .gnb_icon, #gnb.gnb_one_small .gnb_service_li .gnb_service:hover .gnb_icon{background-position:-324px -120px}
-#gnb.gnb_one .gnb_my_lyr, #gnb.gnb_one_small .gnb_my_lyr, #gnb.gnb_one .gnb_notice_lyr, #gnb.gnb_one_small .gnb_notice_lyr, #gnb.gnb_one .gnb_service_lyr, #gnb.gnb_one_small .gnb_service_lyr {right: 7px;}
-#gnb.gnb_one .gnb_ico_num, #gnb.gnb_one_small .gnb_ico_num{width:34px;top:10px;right:3px;left:auto;vertical-align:top}
-#gnb.gnb_one .gnb_ico_num .gnb_ico_new, #gnb.gnb_one_small .gnb_ico_num .gnb_ico_new{vertical-align:top;height:13px;background-position:-332px -60px;}
-#gnb.gnb_one .gnb_ico_num .gnb_count, #gnb.gnb_one_small .gnb_ico_num .gnb_count {height: 13px;padding: 0 6px 0 2px;background-position: 100% -60px;font-size: 10px;font-weight: normal;}
-#gnb.gnb_one .gnb_ico_num .plus, #gnb.gnb_one_small .gnb_ico_num .plus{margin:1px 0 0 2px}
-#gnb.gnb_one .ico_arrow{top:48px}
-#gnb.gnb_one .gnb_my_lyr, #gnb.gnb_one .gnb_notice_lyr{top:47px}
-#gnb.gnb_one .gnb_service_lyr{top:48px;}
-#gnb.gnb_one .gnb_login_li{padding:16px 21px 10px 1px;}
-#gnb.gnb_one .gnb_my_li{padding:12px 20px 12px 2px}
-#gnb.gnb_one .gnb_my_li .ico_arrow{top:34px}
-#gnb.gnb_one .gnb_notice_li a.gnb_notice{padding:18px 19px 17px 19px}
-#gnb.gnb_one .mail_li a.gnb_mail{padding:19px 17px 18px 17px}
-#gnb.gnb_one .gnb_service_li .gnb_service{padding:19px 19px 18px 19px}
-#gnb.gnb_one_small .ico_arrow{top:33px}
-#gnb.gnb_one_small .gnb_my_lyr, #gnb.gnb_one_small .gnb_notice_lyr{top:32px}
-#gnb.gnb_one_small .gnb_service_lyr{top:33px}
-#gnb.gnb_one_small .gnb_login_li{padding:7px 12px 4px 2px}
-#gnb.gnb_one_small .gnb_my_li{padding:5px 20px 4px 2px}
-#gnb.gnb_one_small .gnb_my_li .ico_arrow{top:27px}
-#gnb.gnb_one_small .gnb_notice_li a.gnb_notice{padding:10px 11px 10px 12px}
-#gnb.gnb_one_small .mail_li a.gnb_mail{padding:11px 10px 11px 9px}
-#gnb.gnb_one_small .gnb_service_li .gnb_service{padding:11px 12px 11px 11px}
-#gnb.gnb_one_small .gnb_ico_num{top:5px;right:6px;width:24px}
-#gnb.gnb_one_flat .gnb_login_li,
-#gnb.gnb_one_flat .gnb_my_li,
-#gnb.gnb_one_flat .gnb_notice_li,
-#gnb.gnb_one_flat .mail_li,
-#gnb.gnb_one_flat .gnb_service_li {border-color: #e0e0e0;}
-#gnb.gnb_one_flat .gnb_notice_li.hover,
-#gnb.gnb_one_flat .mail_li.hover,
-#gnb.gnb_one_flat .gnb_service_li.hover {background-color: rgba(0, 0, 0, 0.04);}
-#gnb.gnb_one_flat .gnb_service_li .gnb_service .gnb_icon,
-#gnb.gnb_one_flat .gnb_service_li .gnb_service:hover .gnb_icon {background-image: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_4b16e6.png);background-position: -84px -24px;background-repeat: no-repeat; width: 16px;height: 16px;vertical-align: top; margin: 0 1px;}
-#gnb.gnb_one_flat .mail_li a.gnb_mail .gnb_icon,
-#gnb.gnb_one_flat .mail_li a.gnb_mail:hover .gnb_icon {background-image: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_4b16e6.png);background-position: 0px -42px;background-repeat: no-repeat;width: 20px;height: 16px;vertical-align: top;margin: 0 1px;}
-#gnb.gnb_one_flat .gnb_notice_li a.gnb_notice .gnb_icon,
-#gnb.gnb_one_flat .gnb_notice_li a.gnb_notice:hover .gnb_icon {background-image: url(https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_4b16e6.png);background-position: -84px 0px;background-repeat: no-repeat;width: 16px;height: 18px;vertical-align: top;margin: 0 1px;}
-#gnb.gnb_one_flat .gnb_my_li .gnb_my .gnb_name,
-#gnb.gnb_one_flat .gnb_login_li .gnb_btn_login .gnb_txt {color: #666;}</style><style name="tip_pc" type="text/css">@charset "UTF-8";
-.u_helpdict_module .u_pronunciation .u_btn_pronun, .u_helpdict_module .u_pronunciation .u_btn_tts, .u_helpdict_module .u_btn_helpdict_more .u_helpdict_ico_more, .u_helpdict_module .u_helpdict_close, .u_helpdict_module.u_type_a .u_headword .u_btn_headword .u_reference_word:before {
-	background-image: url(https://ssl.pstatic.net/dicimg/tip/3ad4ad8b499ce61c6c3769611c7e5bb2.png);
-	background-size: 69px 44px;
-}
 
-.u_helpdict_module div,
-.u_helpdict_module ul,
-.u_helpdict_module li,
-.u_helpdict_module h2,
-.u_helpdict_module dl,
-.u_helpdict_module dd,
-.u_helpdict_module img,
-.u_helpdict_module p,
-.u_helpdict_module em,
-.u_helpdict_module a,
-.u_helpdict_module span,
-.u_helpdict_module button {
-	float: none;
-	position: static;
-	margin: 0;
-	padding: 0;
-	border-width: 0;
-	border-style: none;
-	border-color: transparent;
-	border-image: none;
-	border-radius: 0;
-	background: transparent;
-	letter-spacing: 0;
-	line-height: normal;
-	text-align: left;
-	text-decoration: none;
-	text-indent: 0;
-	vertical-align: baseline;
-	white-space: normal;
-	list-style: none;
-	list-style-image: none;
-	list-style-type: none;
-	font-style: normal;
-	word-spacing: 0;
-	font-family: normal;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-.u_helpdict_module button {
-	cursor: pointer;
-}
-
-.u_helpdict_module .u_pronunciation .u_btn_pronun, .u_helpdict_module .u_pronunciation .u_btn_tts, .u_helpdict_module .u_helpdict_close {
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	color: transparent;
-}
-
-/* 보조사전 PC */
-/* 선택된 단어 */
-.u_word_dic.u_active {
-	position: relative;
-	background-color: #cdff74;
-}
-
-.u_word_dic.u_news_active {
-	position: relative;
-	background-color: #cdff74;
-	cursor: pointer;
-}
-
-/* 확대 레이어 */
-.u_helpdict_zoom_area {
-	display: none;
-}
-
-/* 보조사전 영역 */
-.u_helpdict_module {
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 10000;
-	/* 서비스에 맞게 수치 조정 */
-	width: 280px;
-	padding: 0 20px;
-	background-color: #fff;
-	border: 1px solid #b9c8d9;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_helpdict_area {
-	padding: 14px 0 19px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_helpdict_area + .u_helpdict_area {
-	border-top: 1px solid #eaeef3;
-}
-
-.u_helpdict_module .u_headword {
-	padding: 0 30px 0 0;
-	font-size: 23px;
-	line-height: 30px;
-}
-
-.u_helpdict_module .u_headword .u_btn_headword {
-	display: block;
-	font-weight: bold;
-	color: #00c;
-	line-height: 30px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-	word-break: break-all;
-}
-
-.u_helpdict_module .u_headword .u_btn_headword .u_normal_word {
-	font-weight: normal;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_headword .u_btn_headword .u_sup_item {
-	display: inline-block;
-	vertical-align: top;
-	font-size: 13px;
-	margin: -6px 2px 0 3px;
-}
-
-.u_helpdict_module .u_headword .u_btn_headword .u_origin_word {
-	display: inline-block;
-	font-family: NanumGothic, sans-serif;
-	font-weight: normal;
-	font-size: 22px;
-	color: #666;
-}
-
-.u_helpdict_module .u_headword .u_btn_headword .u_origin_word .u_word_slash {
-	color: #8a8a8a;
-}
-
-.u_helpdict_module .u_pronunciation {
-	margin: 0 -2px;
-	font-size: 14px;
-	line-height: 30px;
-	color: #666;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item {
-	display: inline-block;
-	padding: 0 2px;
-	line-height: 30px;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item.source {
-	display: block;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item:first-child {
-	margin: 0 5px 0 0;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item:first-child .u_by_country {
-	margin-left: 0;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_by_country {
-	font-size: 12px;
-	line-height: 20px;
-	margin: 0 4px 0 0;
-	vertical-align: middle;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_phonetic_alphabet {
-	margin: 0 5px 0 0;
-	font-size: 14px;
-	line-height: 22px;
-	color: #666;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_phonetic_alphabet .u_sup_item {
-	vertical-align: top;
-	position: relative;
-	top: -4px;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_phonetic_alphabet[lang="en"] {
-	font-size: 13px;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_origin_source {
-	font-size: 12px;
-	line-height: 19px;
-	vertical-align: middle;
-	color: #767676;
-}
-
-.u_helpdict_module .u_pronunciation .u_pronunciation_item .u_web_collection {
-	display: inline-block;
-	line-height: 17px;
-	border: 1px solid #e7e7e7;
-	padding: 1px 3px 0;
-	font-size: 11px;
-	color: #888;
-	vertical-align: middle;
-}
-
-.u_helpdict_module .u_pronunciation .u_by_country + .u_btn_pronun, .u_helpdict_module .u_pronunciation .u_by_country + .u_btn_tts {
-	margin-left: 0;
-}
-
-.u_helpdict_module .u_pronunciation .u_btn_pronun {
-	background-position: -26px 0px;
-	width: 22px;
-	height: 20px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: -1px 0 0 4px;
-}
-
-.u_helpdict_module .u_pronunciation .u_btn_pronun.u_active {
-	background-position: 0px 0px;
-}
-
-.u_helpdict_module .u_pronunciation .u_btn_tts {
-	background-position: -26px -24px;
-	width: 22px;
-	height: 20px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: -1px 0 0 4px;
-}
-
-.u_helpdict_module .u_pronunciation .u_btn_tts.u_active {
-	background-position: 0px -24px;
-}
-
-.u_helpdict_module .u_definition {
-	margin-top: 12px;
-}
-
-.u_helpdict_module .u_definition .u_origin_source {
-	display: block;
-	margin-top: 5px;
-	font-size: 12px;
-	line-height: 19px;
-	vertical-align: middle;
-	color: #767676;
-}
-
-.u_helpdict_module .u_definition .u_mean_word {
-	font-size: 12px;
-	line-height: 19px;
-	color: #000;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_mean_word_item {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_mean_word_item + .u_mean_word_item {
-	margin-top: 13px;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_word_class {
-	margin-right: 3px;
-	white-space: nowrap;
-	color: #7a96b9;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option {
-	display: block;
-	margin: 0 0 20px;
-	font-size: 12px;
-	white-space: nowrap;
-	color: #000;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option .u_option_item {
-	color: #7a96b9;
-	margin-left: 18px;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option .u_option_item:first-child {
-	margin-left: 0;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option .u_option_radical {
-	font-size: 15px;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_word_mean,
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option + .u_word_mean {
-	font-size: 13px;
-	line-height: 22px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_word_mean .u_direct_link,
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option + .u_word_mean .u_direct_link {
-	white-space: nowrap;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-	color: #888;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_word_mean .u_sup_item,
-.u_helpdict_module .u_definition .u_mean_word .u_hanja_option + .u_word_mean .u_sup_item {
-	font-size: 10px;
-	margin: 0 3px 0 2px;
-	vertical-align: top;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean {
-	position: relative;
-	display: block;
-	margin-top: 7px;
-	padding-left: 17px;
-}
-
-.u_helpdict_module .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean .u_words_num {
-	position: absolute;
-	top: 0;
-	left: 0;
-	line-height: 22px;
-	font-size: 13px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-}
-
-.u_helpdict_module .u_helpdict_notice {
-	padding: 14px 15px;
-	margin: 0 -20px;
-	line-height: 18px;
-	background-color: #fafafa;
-	border-top: 1px solid #eaeef3;
-	font-size: 12px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-	color: #666;
-	clear: both;
-	word-break: keep-all;
-	word-wrap: break-word;
-}
-
-.u_helpdict_module .u_helpdict_notice .u_ico_notice {
-	display: none;
-}
-
-.u_helpdict_module .u_helpdict_notice .u_notice_txt {
-	vertical-align: middle;
-}
-
-.u_helpdict_module .u_helpdict_notice .u_notice_inner {
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-	margin: 0 3px 0 0;
-}
-
-.u_helpdict_module .u_helpdict_notice .u_report_link {
-	color: #404040;
-	text-decoration: underline;
-}
-
-.u_helpdict_module .u_btn_more_wrap {
-	text-align: right;
-	padding: 13px 9px;
-	background-color: #fafafa;
-	border-top: 1px solid #eaeef3;
-	margin: 0 -20px;
-}
-
-.u_helpdict_module .u_btn_helpdict_more {
-	display: inline-block;
-	font-size: 12px;
-	line-height: 18px;
-	font-family: Arial, NanumGothic, Dotum, sans-serif;
-	color: #404040;
-}
-
-.u_helpdict_module .u_btn_helpdict_more .u_bold_num {
-	color: #658fc4;
-}
-
-.u_helpdict_module .u_btn_helpdict_more .u_helpdict_ico_more {
-	background-position: -52px -36px;
-	width: 5px;
-	height: 8px;
-	display: inline-block;
-	margin-top: 2px;
-}
-
-.u_helpdict_module .u_helpdict_close {
-	background-position: -52px 0px;
-	width: 17px;
-	height: 17px;
-	position: absolute;
-	top: 18px;
-	right: 18px;
-}
-
-.u_helpdict_module.u_type_a .u_headword {
-	font-size: 23px;
-	line-height: 32px;
-}
-
-.u_helpdict_module.u_type_a .u_headword .u_btn_headword {
-	line-height: 32px;
-}
-
-.u_helpdict_module.u_type_a .u_headword .u_btn_headword .u_reference_word {
-	display: inline-block;
-	font-size: 23px;
-	line-height: 26px;
-	font-weight: normal;
-	color: #666;
-}
-
-.u_helpdict_module.u_type_a .u_headword .u_btn_headword .u_reference_word:before {
-	background-position: -52px -21px;
-	width: 11px;
-	height: 11px;
-	display: inline-block;
-	margin: 7px 5px 0 0;
-	vertical-align: top;
-	content: '';
-}
-
-.u_helpdict_module.u_type_a .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean .u_words_num {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_type_a .u_definition .u_mean_word .u_word_mean {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_type_b1 .u_headword {
-	font-size: 21px;
-	line-height: 37px;
-}
-
-.u_helpdict_module.u_type_b1 .u_headword .u_btn_headword {
-	line-height: 37px;
-}
-
-.u_helpdict_module.u_type_b1 .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean .u_words_num {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_type_b1 .u_definition .u_mean_word .u_word_mean {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_type_b2 .u_headword {
-	font-size: 23px;
-	line-height: 32px;
-}
-
-.u_helpdict_module.u_type_b2 .u_headword .u_btn_headword {
-	line-height: 32px;
-}
-
-.u_helpdict_module.u_type_b2 .u_pronunciation,
-.u_helpdict_module.u_type_b2 .u_pronunciation .u_pronunciation_item,
-.u_helpdict_module.u_type_b2 .u_pronunciation .u_pronunciation_item .u_origin_source {
-	line-height: 29px;
-}
-
-.u_helpdict_module.u_type_b2 .u_definition .u_mean_word {
-	line-height: 24px;
-}
-
-.u_helpdict_module.u_type_b2 .u_definition .u_mean_word .u_word_class {
-	font-size: 14px;
-}
-
-.u_helpdict_module.u_type_b2 .u_definition .u_mean_word .u_word_mean {
-	font-size: 14px;
-	line-height: 29px;
-}
-
-.u_helpdict_module.u_type_b2 .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean .u_words_num {
-	top: 6px;
-}
-
-.u_helpdict_module.u_type_hanja .u_headword {
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-}
-
-.u_helpdict_module.u_type_hanja .u_headword .u_btn_headword {
-	display: table-cell;
-	width: 35px;
-	font-size: 23px;
-	vertical-align: top;
-}
-
-.u_helpdict_module.u_type_hanja .u_headword .u_han_mean {
-	display: table-cell;
-	padding: 0 30px 0 0;
-	line-height: 20px;
-	font-size: 14px;
-	color: #666;
-	vertical-align: middle;
-}
-
-.u_helpdict_module.u_type_hanja .u_definition {
-	margin-top: 7px;
-}
-
-.u_helpdict_module.u_type_hanja .u_definition .u_mean_word .u_mean_word_item.u_list .u_word_mean .u_words_num {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_type_hanja .u_definition .u_mean_word .u_word_mean {
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.u_helpdict_module.u_layout_xdic .u_helpdict_notice .u_notice_txt {
-	font-size: 13px;
-	line-height: 24px;
-}
-
-.u_helpdict_module.u_layout_xdic .u_btn_helpdict_more {
-	line-height: 24px;
-}
-
-.u_helpdict_module.u_type_japan .u_pronunciation .u_pronunciation_item .u_origin_source {
-	font-size: 13px;
-	color: #888;
-}
-
-.u_helpdict_module.u_type_japan .u_japan_option .u_read_item {
-	display: inline-block;
-	margin: 5px 10px 0 0;
-	vertical-align: top;
-}
-
-.u_helpdict_module.u_type_japan .u_japan_option .u_read_item:after {
-	display: block;
-	clear: both;
-	content: '';
-}
-
-.u_helpdict_module.u_type_japan .u_japan_option .u_read_item .read_item {
-	float: left;
-	margin: 2px 4px 0 0;
-	vertical-align: top;
-	color: #7a96b9;
-}
-
-.u_helpdict_module.u_type_japan .u_japan_option .u_read_item .read_text {
-	overflow: hidden;
-}
-
-.u_helpdict_module.u_type_japan .u_headword .u_btn_headword {
-	display: inline-block;
-	vertical-align: middle;
-	min-width: 25px;
-	font-family: "Hiragino Sans", YuGothic, Meiryo, "MS Pgothic", sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-}
-
-.u_helpdict_module.u_type_japan .u_headword .u_btn_headword .u_origin_word {
-	font-size: 23px;
-	color: #000;
-}
-
-.u_helpdict_module.u_type_japan .u_han_mean {
-	display: inline-block;
-	padding: 0 15px 0 0;
-	line-height: 20px;
-	font-size: 15px;
-	color: #666;
-	vertical-align: middle;
-}
-
-.u_helpdict_module.u_type_japan .u_relate_hanja {
-	margin: 0 -20px;
-	padding: 20px 20px 0;
-	border-top: 1px solid #b9c8d9;
-	line-height: 17px;
-	font-size: 15px;
-	font-weight: bold;
-	color: #404040;
-}
-
-.u_helpdict_module.u_type_japan .u_helpdict_area.u_hanja {
-	padding: 20px 0 19px;
-	border-color: #eaeef3;
-}
-
-.u_helpdict_module.u_type_japan .u_definition {
-	margin-top: 10px;
-}
-
-.u_helpdict_module.u_type_japan .u_definition .u_mean_word .u_hanja_option {
-	margin-bottom: 0;
-	font-size: 13px;
-}
-
-.u_helpdict_module.u_type_japan .u_definition .u_mean_word .u_option_radical,
-.u_helpdict_module.u_type_japan .u_definition .u_mean_word .read_text {
-	font-size: 16px;
-}
-
-.u_helpdict_module.u_type_hanja .u_headword .u_btn_headword .u_origin_word {
-	display: none;
-}
-</style>
 <link type="text/css" rel="stylesheet" class="like_css" href="./files/likeit_multi.css">
 <link type="text/css" rel="stylesheet" class="like_css" href="./files/likeit_news.css">
 <script src="./files/clickcrD.js.다운로드" id="gnb_clickcrD" charset="utf-8"></script>
@@ -1031,52 +63,7 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 		<tbody><tr>
 			<td class="content">
 				<div id="main_content" class="content">
-					<script type="text/javascript">
-    if (nil) {
-        nil.init('naver_news', '003');
-        
-        nil.add({
-            'uri': 'http://news.naver.com/main/read.nhn?oid=003&aid=0003953734',
-            'dimension_1': '%EC%83%9D%ED%99%9C'
-            
-            , 'dimension_4': 'photo'
-            
-        });
-        //cv 측정
-        nil.send('cv', 'post_view');
-
-        if (window.attachEvent) {
-            window.attachEvent("onunload", function () {
-                nil.send('leave');
-            });
-        } else if (window.addEventListener) {
-            window.addEventListener("unload", function () {
-                nil.send('leave');
-            }, false);
-        } else {
-            var fnOnUnload = window.onunload;
-            window.onunload = function () {
-                nil.send('leave');
-                fnOnUnload();
-            };
-        }
-    }
-</script>
-
-<script type="text/javascript">
-    if (typeof window.ReadingObserver !== 'undefined') {
-        ReadingObserver.start('articleBody', {
-            sContentBottomId: 'spiLayer',
-            oid: '003',
-            aid: '0003953734',
-            sid: '103',
-            articleType: '1',
-            hitRefererType: 'UNKNOWN',
-            gdid: '88000127_000000000000000003953734'
-        });
-    }
-</script>
-
+					
 
 
 
@@ -1114,82 +101,7 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
         <button type="button" class="head_channel_layer_close">닫기</button>
     </p>
 </div>
-<script type="text/javascript">
-    jindo.$Fn(function () {
-        var params = getLocationQueryParams();
-        var url = "/main/ajax/channel/isPickedArticle.naver?oid=" + params.oid + "&aid=" + params.aid;
-        var oAjax = jindo.$Ajax(url, {
-            method: "get",
-            onload: function (res) {
-                var isPicked;
-                try {
-                    isPicked = res.json();
-                } catch (e) {
-                    return;
-                }
 
-                if (!isPicked) {
-                    return;
-                }
-
-                initChannelPickBanner();
-            }
-        });
-
-        oAjax.request();
-
-        function initChannelPickBanner() {
-            var welHeadTop = jindo.$ElementList(".article_header").getFirst();
-            var welLogo = jindo.$Element(welHeadTop.query(".head_channel"));
-            var welLayer = jindo.$Element(welLogo.query(".head_channel_layer"));
-            var welChannelPickBannerBtn = jindo.$Element(welLogo.query(".head_channel_button"));
-            var layerAutoCloseManager = LayerAutoCloseManager.get_instance();
-
-            var layerForAutoCloseMananger = {
-                close: function () {
-                    welLayer.hide();
-                },
-                isAutoCloseExceptionEl: function (el) {
-                    // toggle button일 경우 예외
-                    return (welChannelPickBannerBtn.$value() === el) || welChannelPickBannerBtn.isParentOf(el);
-                }
-            };
-
-            jindo.$Fn(function (evt) {
-                welLayer.toggle();
-
-                // open 이라면 적용
-                if (welLayer.visible()) {
-                    layerAutoCloseManager.setCurrentVisibleLayer(layerForAutoCloseMananger);
-                }
-            }).attach(welChannelPickBannerBtn, "click");
-
-            jindo.$Fn(function (evt) {
-                var wel = jindo.$Element(evt.currentElement);
-                evt.stop();
-                window.open(wel.attr("href"), "", "width=460, height=496");
-            }).attach(jindo.$Element(welLayer.query(".head_channel_layer_link")), "click");
-
-            welLogo.show();
-        }
-
-        function getLocationQueryParams() {
-            var params = {};
-            var kv = [];
-            var queryString = location.search.substr(1);
-            var paramStrList;
-            if (queryString) {
-                paramStrList = queryString.split("&");
-                for (var i = 0, len = paramStrList.length; i < len; i++) {
-                    kv = paramStrList[i].split("=");
-                    params[kv[0]] = kv[1];
-                }
-            }
-
-            return params;
-        }
-    }).attach(window, "load");
-</script>
 	<div class="article_info">
 		<h3 id="articleTitle" class="tts_head">행위 예술가, 광주서 5·18 의미 담긴 누드 퍼포먼스</h3>
 		<div class="sponsor">
@@ -1213,7 +125,7 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 					
 					<div class="article_btns_left">
 						<div class="_reactionModule u_likeit" data-sid="NEWS" data-cid="ne_003_0003953734" style="visibility: visible;" data-loaded="1" data-facetype="1">
-							<a class="u_likeit_button _face nclicks(RTL.face) off" data-label="news" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" aria-haspopup="true" aria-pressed="false">
+							<a class="u_likeit_button _face nclicks(RTL.face) off" data-label="news" aria-haspopup="true" aria-pressed="false">
 								<span class="u_likeit_icons _icons">
 									<span class="u_likeit_icon __reaction__like"><span class="u_likeit_blind">좋아요</span></span>
 								<span class="u_likeit_icon __reaction__like" style="display: none;"><span class="u_likeit_blind">좋아요</span></span></span>
@@ -1222,38 +134,38 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 							</a>
 							<ul class="u_likeit_layer _faceLayer" role="menu">
 								<li class="u_likeit_list good" role="menuitem">
-									<a class="u_likeit_list_button _button off" data-type="like" data-log="RTL.like|RTL.unlike" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" role="button" aria-selected="false" aria-pressed="false">
+									<a class="u_likeit_list_button _button off" data-type="like" data-log="RTL.like|RTL.unlike" role="button" aria-selected="false" aria-pressed="false">
 										<span class="u_likeit_list_name _label">좋아요</span>
 										<span class="u_likeit_list_count _count">0</span>
 									</a>
 								</li>
 								<li class="u_likeit_list warm" role="menuitem">
-									<a class="u_likeit_list_button _button off" data-type="warm" data-log="RTL.warm|RTL.unwarm" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" role="button" aria-selected="false" aria-pressed="false">
+									<a class="u_likeit_list_button _button off" data-type="warm" data-log="RTL.warm|RTL.unwarm" role="button" aria-selected="false" aria-pressed="false">
 										<span class="u_likeit_list_name _label">훈훈해요</span>
 										<span class="u_likeit_list_count _count">0</span>
 									</a>
 								</li>
 								<li class="u_likeit_list sad" role="menuitem">
-									<a class="u_likeit_list_button _button off" data-type="sad" data-log="RTL.sad|RTL.unsad" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" role="button" aria-selected="false" aria-pressed="false">
+									<a class="u_likeit_list_button _button off" data-type="sad" data-log="RTL.sad|RTL.unsad" role="button" aria-selected="false" aria-pressed="false">
 										<span class="u_likeit_list_name _label">슬퍼요</span>
 										<span class="u_likeit_list_count _count">0</span>
 									</a>
 								</li>
 								<li class="u_likeit_list angry" role="menuitem">
-									<a class="u_likeit_list_button _button off" data-type="angry" data-log="RTL.angry|RTL.unangry" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" role="button" aria-selected="false" aria-pressed="false">
+									<a class="u_likeit_list_button _button off" data-type="angry" data-log="RTL.angry|RTL.unangry" role="button" aria-selected="false" aria-pressed="false">
 										<span class="u_likeit_list_name _label">화나요</span>
 										<span class="u_likeit_list_count _count">0</span>
 									</a>
 								</li>
 								<li class="u_likeit_list want" role="menuitem">
-									<a class="u_likeit_list_button _button off" data-type="want" data-log="RTL.want|RTL.unwant" href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" role="button" aria-selected="false" aria-pressed="false">
+									<a class="u_likeit_list_button _button off" data-type="want" data-log="RTL.want|RTL.unwant" role="button" aria-selected="false" aria-pressed="false">
 										<span class="u_likeit_list_name _label">후속기사 원해요</span>
 										<span class="u_likeit_list_count _count">0</span>
 									</a>
 								</li>
 							</ul>
 						</div>
-						<a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734&amp;m_view=1&amp;includeAllCount=true&amp;m_url=%2Fcomment%2Fall.nhn%3FserviceId%3Dnews%26gno%3Dnews003%2C0003953734%26sort%3Dlikability" class="pi_btn_count nclicks(atp_reply) num" id="articleTitleCommentCount">
+						<a class="pi_btn_count nclicks(atp_reply) num" id="articleTitleCommentCount">
 							<span class="blind pi_btn_count_blind">댓글</span><span class="lo_txt">75</span>
 						</a>
 					</div>
@@ -1265,7 +177,7 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 								<a href="javascript:;" class="media_end_head_autosummary_button _toggle_btn nclicks(sum_summary)">요약봇</a>
 								<div class="media_end_head_autosummary_layer _auto_summary_contents">
 									<div class="media_end_head_autosummary_layer_head">
-										<strong class="media_end_head_autosummary_layer_head_tit">본문 요약봇<a href="https://help.naver.com/support/alias/news/news_20.naver?" class="media_end_head_autosummary_help nclicks(sum_help)" target="_blank">도움말</a></strong>
+										<strong class="media_end_head_autosummary_layer_head_tit">본문 요약봇<a class="media_end_head_autosummary_help nclicks(sum_help)" target="_blank">도움말</a></strong>
 										<span class="media_end_head_autosummary_layer_head_txt">자동 추출 기술로 요약된 내용입니다. 요약 기술의 특성상 본문의 주요 내용이 제외될 수 있어,<br>전체 맥락을 이해하기 위해서는 기사 본문 전체보기를 권장합니다.</span>
 									</div>
 									<div class="media_end_head_autosummary_layer_body">
@@ -1343,7 +255,7 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 									<div class="media_end_head_fontsize_linklayer _font_family_install_guide">
 										<p class="media_end_head_fontsize_linklayer_txt"><strong>나눔고딕</strong> 폰트가 설치되어있지 않습니다.<br><em>나눔 폰트</em>를 설치하러 가시겠습니까?</p>
 										<div class="media_end_head_fontsize_linklayer_btns">
-											<a href="http://hangeul.naver.com/2017/nanum" class="media_end_head_fontsize_linklayer_btn _yes_btn" target="_blank">예</a>
+											<a class="media_end_head_fontsize_linklayer_btn _yes_btn" target="_blank">예</a>
 											<a href="javascript:;" class="media_end_head_fontsize_linklayer_btn _no_btn">아니오</a>
 										</div>
 										<a href="javascript:;" class="media_end_head_fontsize_linklayer_close _close_btn"><span class="blind">닫기</span></a>
@@ -1351,9 +263,9 @@ a.gnb_service_all:hover, a.gnb_service_all:visited, a.gnb_service_all:active, a.
 								</div>
 							</div>
 						
-							<a href="https://news.naver.com/main/tool/print.naver?oid=003&amp;aid=0003953734" class="media_end_head_print nclicks(atp_print)" target="_blank"><span class="bline">인쇄하기</span></a>
+							<a class="media_end_head_print nclicks(atp_print)" target="_blank"><span class="bline">인쇄하기</span></a>
 							<div class="sns_share">
-								<a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=103&amp;oid=003&amp;aid=0003953734#" title="보내기" class="naver-splugin nclicks(atp_share)" data-style="unity" data-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734" data-title="행위 예술가, 광주서 5·18 의미 담긴 누드 퍼포먼스" data-likeserviceid="NEWS" data-likecontentsid="ne_003_0003953734" data-mail-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=mail" data-blog-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=blog" data-blog-source-type="3" data-blog-blog-id="naver" data-cafe-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=cafe" data-cafe-source-type="3" data-memo-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=memo" data-calendar-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=calendar" data-band-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=band" data-facebook-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=facebook" data-twitter-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=twitter" data-me-display="off" splugin-id="673305183">
+								<a title="보내기" class="naver-splugin nclicks(atp_share)" data-style="unity" data-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734" data-title="행위 예술가, 광주서 5·18 의미 담긴 누드 퍼포먼스" data-likeserviceid="NEWS" data-likecontentsid="ne_003_0003953734" data-mail-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=mail" data-blog-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=blog" data-blog-source-type="3" data-blog-blog-id="naver" data-cafe-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=cafe" data-cafe-source-type="3" data-memo-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=memo" data-calendar-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=calendar" data-band-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=band" data-facebook-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=facebook" data-twitter-url="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=001&amp;oid=003&amp;aid=0003953734&amp;lfrom=twitter" data-me-display="off" splugin-id="673305183">
 								<span class="naver-splugin-c sns_share_ico"></span>
 								<span class="blind">보내기</span>
 								</a>
@@ -1379,7 +291,7 @@ function _flash_removeCallback() {}
 <table width="430" style="clear:both;" cellpadding="0" cellspacing="0" border="0" align="center"><tbody><tr><td align="center" style="padding:0 10px 5px 2px;"><img src="./files/NISI20110707_0004792379_web.jpg" alt="" width="430" height="600" border="0" title=""></td></tr></tbody></table><br>
 【광주=뉴시스】류형근 기자 = 여성 행위 예술가가 <span data-type="ore" data-lang="en">5·18</span>광주민주화운동의 상징인 옛 전남도청 앞 분수대에서 <span data-type="ore" data-lang="en">5·18</span>을 주제로 누드 퍼포먼스를 펼쳤다.<br><br> 행위 예술가 흑표범(<span data-type="ore" data-lang="en">31</span>)은 7일 낮 <span data-type="ore" data-lang="en">12</span>시 <span data-type="ore" data-lang="en">5·18</span>민주화운동의 상징적인 공간인 광주 동구 충장로 옛 도청 앞 분수대에서 무장해제 된 인간 본연의 상태인 나체로 목욕 하는 장면을 연출해 평화로운 일상의 모습과 지난 역사가 남긴 상처가 치유되고 정화되는 의미를 담은 퍼포먼스를 펼쳤다.<br><br> 흑표범은 자신의 몸에 과녁을 상징하는 그림을 그렸고 현수막에 <span data-type="ore" data-lang="en">'Shoot</span>! <span data-type="ore" data-lang="en">Shoot</span>! <span data-type="ore" data-lang="en">Shoot</span>!' 이라는 문구를 넣어 <span data-type="ore" data-lang="en">80</span>년 <span data-type="ore" data-lang="en">5·18</span> 당시 무장한 군인들이 시민들에게 총을 발사한 모습을 형상화 했다.<br><br> 또 그는 공공장소에 갑자기 출현한 누드의 여체를 관람하는 관객들에게 휴대전화를 꺼내 '찍어라'고 외쳤다.<br><br> 흑표범은 "'찍어라'의 의미는 군사 정권에 의해 이 공간에서 벌어진 당시 만행은 외부에 통제됐지만 같은 장소에서 펼쳐진 퍼포먼스는 소셜네트워크를 통해 실시간으로 전 세계 관객에게 전달되고 상호연결 됐다는 사회적, 문화적 변화를 반영한다"고 말했다.<br><br> 이어 낮 <span data-type="ore" data-lang="en">12</span>시에 누드 퍼포먼스를 펼친 이유에 대해 "<span data-type="ore" data-lang="en">5·18</span> 때 무장한 군인들이 광주 시민들에게 처음으로 사격을 가했던 시간이다"며 "<span data-type="ore" data-lang="en">30</span>여년이 시간이 흐른 이곳은 평범하고 평화로운 일상의 모습으로 변했고 동시에 지난 역사가 남긴 상처를 치유하고 정화하고자 하는 의미를 담아 인간 본연의 모습인 누드 퍼포먼스를 펼치게 됐다"고 설명했다.<br><br> <span data-type="ore" data-lang="en">10</span>여분 동안 누드 퍼포먼스를 펼친 흑표범은 옛 전남도청을 향해 인사를 한 뒤 돌아섰다.<br><br> 한편 이날 광주 동구청은 흑표범이 누드 퍼포먼스에 사용하기 위해 분수대에 설치한 대형 풍선과 사다리 등의 장비를 철거했다. 흑표범은 분수대 안쪽으로 진입해 상단에서 공연을 펼칠 예정이었다.<br><br> <span data-type="ore" data-lang="en">hgryu77</span>@<span data-type="ore" data-lang="en">newsis.com</span><br><br>
 
-<div style="font-size:15px;font-weight:bold;font-family:Dotum;line-height:30px;color:#D20000;">[뉴시스 이시간 핫 뉴스]</div><ul style="line-height:25px;"><li><a target="_blank" href="http://www.newsis.com/ar_detail/view.html?ar_id=NISX20110707_0008623856&amp;cID=10304&amp;pID=10300"><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [해병 총기사건]두 병사 총기탈취후 1시간동안 뭘 했을까?</span></a></li><li><a target="_blank" href="http://www.newsis.com/ar_detail/view.html?ar_id=NISX20110707_0008620792&amp;cID=10501&amp;pID=10500"><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [2018평창]눈물 쏟은 김연아 "이 자리에 있어 영광이다"</span></a></li><li><a target="_blank" href="http://nollywood.newsis.com/article/view.htm?ar_id=NISX20110706_0008616868&amp;cID=10603&amp;pID=10600"><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ 장근석, 김하늘 누나가 샤워시켜줘요…´너는 펫´</span></a></li><li><a target="_blank" href="http://www.newsis.com/ar_detail/view.html?ar_id=NISX20110602_0008362633&amp;cID=10408&amp;pID=10400"><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ 최초! 개인회생 파산면책자 대출!</span></a></li><li><a target="_blank" href="http://www.newsis.com/ar_detail/view.html?ar_id=NISX20110707_0008620310&amp;cID=10102&amp;pID=10100"><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [2018평창]2020년 하계올림픽 노리던 일본 ´낙담´</span></a></li></ul><br><br><a target="_blank" href="http://www.newsis.com/app/app_index.htm"><strong>★ 손 안에서 보는 세상, 모바일 뉴시스</strong></a><br><br>&lt;저작권자ⓒ '한국언론 뉴스허브' 뉴시스통신사. 무단전재-재배포 금지.&gt;<br><br>
+<div style="font-size:15px;font-weight:bold;font-family:Dotum;line-height:30px;color:#D20000;">[뉴시스 이시간 핫 뉴스]</div><ul style="line-height:25px;"><li><a target="_blank" ><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [해병 총기사건]두 병사 총기탈취후 1시간동안 뭘 했을까?</span></a></li><li><a target="_blank" ><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [2018평창]눈물 쏟은 김연아 "이 자리에 있어 영광이다"</span></a></li><li><a target="_blank" ><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ 장근석, 김하늘 누나가 샤워시켜줘요…´너는 펫´</span></a></li><li><a target="_blank" ><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ 최초! 개인회생 파산면책자 대출!</span></a></li><li><a target="_blank" ><span style="font-size:15px;color:#007AB5;font-weight:bold; font-family:Dotum;"> ㆍ [2018평창]2020년 하계올림픽 노리던 일본 ´낙담´</span></a></li></ul><br><br><a target="_blank" ><strong>★ 손 안에서 보는 세상, 모바일 뉴시스</strong></a><br><br>&lt;저작권자ⓒ '한국언론 뉴스허브' 뉴시스통신사. 무단전재-재배포 금지.&gt;<br><br>
 
 	<!-- // 본문 내용 -->
 	</div>
@@ -3153,7 +2065,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=102&amp;oid=001&amp;aid=0012723462" class="nclicks(rig.secteco)" title="16∼17세 청소년 18일부터 화이자 접종…임신부 접종도 시작">16∼17세 청소년 18일부터 화이자 접종…임신부 접종도 시작</a>
+                    <a class="nclicks(rig.secteco)" title="16∼17세 청소년 18일부터 화이자 접종…임신부 접종도 시작">16∼17세 청소년 18일부터 화이자 접종…임신부 접종도 시작</a>
                 </li>
             
         
@@ -3161,7 +2073,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=100&amp;oid=003&amp;aid=0010773613" class="nclicks(rig.secteco)" title="진중권 &quot;홍준표 토론, 술 먹은 할아버지같아&quot;…洪 &quot;맏형 토론했다&quot;">진중권 "홍준표 토론, 술 먹은 할아버지같아"…洪 "맏형 토론했다"</a>
+                    <a class="nclicks(rig.secteco)" title="진중권 &quot;홍준표 토론, 술 먹은 할아버지같아&quot;…洪 &quot;맏형 토론했다&quot;">진중권 "홍준표 토론, 술 먹은 할아버지같아"…洪 "맏형 토론했다"</a>
                 </li>
             
         
@@ -3169,7 +2081,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=103&amp;oid=015&amp;aid=0004616898" class="nclicks(rig.secteco)" title="탁현민 &quot;BTS 불만 없다는데 왜?&quot;…특사 활동비 논란에 또 입장 [종합]">탁현민 "BTS 불만 없다는데 왜?"…특사 활동비 논란에 또 입장 [종합]</a>
+                    <a class="nclicks(rig.secteco)" title="탁현민 &quot;BTS 불만 없다는데 왜?&quot;…특사 활동비 논란에 또 입장 [종합]">탁현민 "BTS 불만 없다는데 왜?"…특사 활동비 논란에 또 입장 [종합]</a>
                 </li>
             
         
@@ -3177,7 +2089,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=103&amp;oid=081&amp;aid=0003222691" class="nclicks(rig.secteco)" title="“‘오징어게임’ 재밌다고 훔쳐보더니…” 中정식방영은 안될듯[이슈픽]">“‘오징어게임’ 재밌다고 훔쳐보더니…” 中정식방영은 안될듯[이슈픽]</a>
+                    <a class="nclicks(rig.secteco)" title="“‘오징어게임’ 재밌다고 훔쳐보더니…” 中정식방영은 안될듯[이슈픽]">“‘오징어게임’ 재밌다고 훔쳐보더니…” 中정식방영은 안될듯[이슈픽]</a>
                 </li>
             
         
@@ -3185,47 +2097,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=104&amp;oid=422&amp;aid=0000509404" class="nclicks(rig.secteco)" title="美, 얀센도 부스터샷 권고…&quot;18세 이상 모두&quot;">美, 얀센도 부스터샷 권고…"18세 이상 모두"</a>
-                </li>
-            </ul>
-        
-            <ul class="list_txt">
-                
-
-                <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=101&amp;oid=057&amp;aid=0001614486" class="nclicks(rig.secteco)" title="&#39;채시라 남편&#39; 김태욱 이끄는 아이패밀리SC, 공모가 &#39;뚝&#39;…왜?">'채시라 남편' 김태욱 이끄는 아이패밀리SC, 공모가 '뚝'…왜?</a>
-                </li>
-            
-        
-            
-                
-
-                <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=105&amp;oid=293&amp;aid=0000036620" class="nclicks(rig.secteco)" title="중국 전기차업체, 생산능력 확대하며 점유율 확보 경쟁">중국 전기차업체, 생산능력 확대하며 점유율 확보 경쟁</a>
-                </li>
-            
-        
-            
-                
-
-                <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=102&amp;oid=417&amp;aid=0000744112" class="nclicks(rig.secteco)" title="광주광역시, 9월 아파트 분양가 1431만원…60㎡이하는 하락">광주광역시, 9월 아파트 분양가 1431만원…60㎡이하는 하락</a>
-                </li>
-            
-        
-            
-                
-
-                <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=105&amp;oid=584&amp;aid=0000016363" class="nclicks(rig.secteco)" title="발사 카운트다운 앞둔 누리호 개발의 숨은 주역들[프리미엄 리포트]">발사 카운트다운 앞둔 누리호 개발의 숨은 주역들[프리미엄 리포트]</a>
-                </li>
-            
-        
-            
-                
-
-                <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=103&amp;oid=009&amp;aid=0004865555" class="nclicks(rig.secteco)" title="위기의 삼성전자 vs 기회의 애플?! 아이폰13 타고 천국으로!">위기의 삼성전자 vs 기회의 애플?! 아이폰13 타고 천국으로!</a>
+                    <a class="nclicks(rig.secteco)" title="美, 얀센도 부스터샷 권고…&quot;18세 이상 모두&quot;">美, 얀센도 부스터샷 권고…"18세 이상 모두"</a>
                 </li>
             </ul>
         
@@ -3233,7 +2105,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=102&amp;oid=014&amp;aid=0004723550" class="nclicks(rig.secteco)" title="화이자 백신 맞고 시력 잃어가는 아내 &quot;애들이 도깨비처럼 보인다&quot;">화이자 백신 맞고 시력 잃어가는 아내 "애들이 도깨비처럼 보인다"</a>
+                    <a class="nclicks(rig.secteco)" title="&#39;채시라 남편&#39; 김태욱 이끄는 아이패밀리SC, 공모가 &#39;뚝&#39;…왜?">'채시라 남편' 김태욱 이끄는 아이패밀리SC, 공모가 '뚝'…왜?</a>
                 </li>
             
         
@@ -3241,7 +2113,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=102&amp;oid=015&amp;aid=0004616906" class="nclicks(rig.secteco)" title="제주 아파트 단지서 고등학생 추락사…경찰 조사 나선다">제주 아파트 단지서 고등학생 추락사…경찰 조사 나선다</a>
+                    <a class="nclicks(rig.secteco)" title="중국 전기차업체, 생산능력 확대하며 점유율 확보 경쟁">중국 전기차업체, 생산능력 확대하며 점유율 확보 경쟁</a>
                 </li>
             
         
@@ -3249,7 +2121,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=102&amp;oid=079&amp;aid=0003563544" class="nclicks(rig.secteco)" title="서울 등 전국 대부분, 올 가을 첫 &#39;한파특보&#39;">서울 등 전국 대부분, 올 가을 첫 '한파특보'</a>
+                    <a class="nclicks(rig.secteco)" title="광주광역시, 9월 아파트 분양가 1431만원…60㎡이하는 하락">광주광역시, 9월 아파트 분양가 1431만원…60㎡이하는 하락</a>
                 </li>
             
         
@@ -3257,7 +2129,7 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=103&amp;oid=119&amp;aid=0002538710" class="nclicks(rig.secteco)" title=" 노엘 구속 / 뷔·지수 황당 열애설 / 최성봉 &#39;거짓 암투병&#39; 의혹[주간 대중문화 이슈]"> 노엘 구속 / 뷔·지수 황당 열애설 / 최성봉 '거짓 암투병' 의혹[주간 대중문화 이슈]</a>
+                    <a class="nclicks(rig.secteco)" title="발사 카운트다운 앞둔 누리호 개발의 숨은 주역들[프리미엄 리포트]">발사 카운트다운 앞둔 누리호 개발의 숨은 주역들[프리미엄 리포트]</a>
                 </li>
             
         
@@ -3265,7 +2137,47 @@ function _flash_removeCallback() {}
                 
 
                 <li>
-                    <a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=shm&amp;sid1=103&amp;oid=025&amp;aid=0003142749" class="nclicks(rig.secteco)" title="&quot;아내 힘들지만&quot; &#39;오징어게임&#39; 오영수 깐부치킨 광고 거절 이유">"아내 힘들지만" '오징어게임' 오영수 깐부치킨 광고 거절 이유</a>
+                    <a class="nclicks(rig.secteco)" title="위기의 삼성전자 vs 기회의 애플?! 아이폰13 타고 천국으로!">위기의 삼성전자 vs 기회의 애플?! 아이폰13 타고 천국으로!</a>
+                </li>
+            </ul>
+        
+            <ul class="list_txt">
+                
+
+                <li>
+                    <a class="nclicks(rig.secteco)" title="화이자 백신 맞고 시력 잃어가는 아내 &quot;애들이 도깨비처럼 보인다&quot;">화이자 백신 맞고 시력 잃어가는 아내 "애들이 도깨비처럼 보인다"</a>
+                </li>
+            
+        
+            
+                
+
+                <li>
+                    <a class="nclicks(rig.secteco)" title="제주 아파트 단지서 고등학생 추락사…경찰 조사 나선다">제주 아파트 단지서 고등학생 추락사…경찰 조사 나선다</a>
+                </li>
+            
+        
+            
+                
+
+                <li>
+                    <a class="nclicks(rig.secteco)" title="서울 등 전국 대부분, 올 가을 첫 &#39;한파특보&#39;">서울 등 전국 대부분, 올 가을 첫 '한파특보'</a>
+                </li>
+            
+        
+            
+                
+
+                <li>
+                    <a class="nclicks(rig.secteco)" title=" 노엘 구속 / 뷔·지수 황당 열애설 / 최성봉 &#39;거짓 암투병&#39; 의혹[주간 대중문화 이슈]"> 노엘 구속 / 뷔·지수 황당 열애설 / 최성봉 '거짓 암투병' 의혹[주간 대중문화 이슈]</a>
+                </li>
+            
+        
+            
+                
+
+                <li>
+                    <a class="nclicks(rig.secteco)" title="&quot;아내 힘들지만&quot; &#39;오징어게임&#39; 오영수 깐부치킨 광고 거절 이유">"아내 힘들지만" '오징어게임' 오영수 깐부치킨 광고 거절 이유</a>
                 </li>
             </ul>
         
@@ -3300,7 +2212,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=016&amp;aid=0001899845&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/1899845.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3310,9 +2222,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=016&amp;aid=0001899845&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">“치킨 한마리에 7천원 내라니” 온동네 배달료 인상에 ‘아 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">“치킨 한마리에 7천원 내라니” 온동네 배달료 인상에 ‘아 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=016"><span class="list_press_thumb"><img src="./files/logo_016_56_20201103113832.jpg" width="16" height="16" alt=""></span>헤럴드경제</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_016_56_20201103113832.jpg" width="16" height="16" alt=""></span>헤럴드경제</a>
                             
                         </div>
                     </div>
@@ -3326,7 +2238,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=020&amp;aid=0003387584&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3387584.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3336,9 +2248,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=020&amp;aid=0003387584&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">尹 “홍준표 잘했으면 내가 나왔겠나” 洪 “이재명과 도덕성 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">尹 “홍준표 잘했으면 내가 나왔겠나” 洪 “이재명과 도덕성 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=020"><span class="list_press_thumb"><img src="./files/logo_020_56_20200917112548.jpg" width="16" height="16" alt=""></span>동아일보</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_020_56_20200917112548.jpg" width="16" height="16" alt=""></span>동아일보</a>
                             
                         </div>
                     </div>
@@ -3352,7 +2264,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=055&amp;aid=0000927422&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/927422.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3362,9 +2274,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=055&amp;aid=0000927422&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[뉴스쉽] 김정은은 정말 종전선언을 원할까?</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[뉴스쉽] 김정은은 정말 종전선언을 원할까?</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=055"><span class="list_press_thumb"><img src="./files/logo_055_56_20201007141807.jpg" width="16" height="16" alt=""></span>SBS</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_055_56_20201007141807.jpg" width="16" height="16" alt=""></span>SBS</a>
                             
                         </div>
                     </div>
@@ -3378,7 +2290,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=469&amp;aid=0000635344&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/635344.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3388,9 +2300,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=469&amp;aid=0000635344&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">‘파산 위기’ 헝다, 2조원대 건물 매각 무산… 中 당국  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">‘파산 위기’ 헝다, 2조원대 건물 매각 무산… 中 당국  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=469"><span class="list_press_thumb"><img src="./files/logo_469_56_20180720194420.png" width="16" height="16" alt=""></span>한국일보</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_469_56_20180720194420.png" width="16" height="16" alt=""></span>한국일보</a>
                             
                         </div>
                     </div>
@@ -3404,7 +2316,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=028&amp;aid=0002564064&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/2564064.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3414,9 +2326,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=028&amp;aid=0002564064&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[논썰] ‘충격의 3차 투표’ 미스터리와 이재명의 ‘국감  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[논썰] ‘충격의 3차 투표’ 미스터리와 이재명의 ‘국감  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=028"><span class="list_press_thumb"><img src="./files/logo_028_56_20180801163801.png" width="16" height="16" alt=""></span>한겨레</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_028_56_20180801163801.png" width="16" height="16" alt=""></span>한겨레</a>
                             
                         </div>
                     </div>
@@ -3434,7 +2346,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=025&amp;aid=0003142810&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3142810.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3444,9 +2356,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=025&amp;aid=0003142810&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">문자 깐 조재범에…"심석희 정상적 생활 불가, 정신적 충격 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">문자 깐 조재범에…"심석희 정상적 생활 불가, 정신적 충격 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=025"><span class="list_press_thumb"><img src="./files/logo_025_56_20210820165911.png" width="16" height="16" alt=""></span>중앙일보</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_025_56_20210820165911.png" width="16" height="16" alt=""></span>중앙일보</a>
                             
                         </div>
                     </div>
@@ -3460,7 +2372,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=437&amp;aid=0000278469&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/278469.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                                 <strong class="r_ico r_vod_small">동영상기사</strong>
@@ -3472,9 +2384,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=437&amp;aid=0000278469&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[단독] "LH 사장 일행, 아파트 인도 차단봉까지 뽑고  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[단독] "LH 사장 일행, 아파트 인도 차단봉까지 뽑고  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=437"><span class="list_press_thumb"><img src="./files/logo_437_56_20200825135552.png" width="16" height="16" alt=""></span>JTBC</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_437_56_20200825135552.png" width="16" height="16" alt=""></span>JTBC</a>
                             
                         </div>
                     </div>
@@ -3488,7 +2400,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=056&amp;aid=0011138575&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/11138575.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3498,9 +2410,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=056&amp;aid=0011138575&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">네덜란드 공주, 동성 결혼해도 왕위 계승 가능…“시대가 변 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">네덜란드 공주, 동성 결혼해도 왕위 계승 가능…“시대가 변 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=056"><span class="list_press_thumb"><img src="./files/logo_056_56_20210714182955.png" width="16" height="16" alt=""></span>KBS</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_056_56_20210714182955.png" width="16" height="16" alt=""></span>KBS</a>
                             
                         </div>
                     </div>
@@ -3514,7 +2426,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=009&amp;aid=0004865576&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/4865576.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3524,9 +2436,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=009&amp;aid=0004865576&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">일상회복 앞두고 '청천벽력' 같은 소식…인간 침투 코로나  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">일상회복 앞두고 '청천벽력' 같은 소식…인간 침투 코로나  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=009"><span class="list_press_thumb"><img src="./files/logo_009_56_20180720194820.png" width="16" height="16" alt=""></span>매일경제</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_009_56_20180720194820.png" width="16" height="16" alt=""></span>매일경제</a>
                             
                         </div>
                     </div>
@@ -3540,7 +2452,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=018&amp;aid=0005061694&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/5061694.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3550,9 +2462,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=018&amp;aid=0005061694&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">'뭐라 지껄이나 보자' 심석희 도청 의혹.. 경찰 '고발  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">'뭐라 지껄이나 보자' 심석희 도청 의혹.. 경찰 '고발  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=018"><span class="list_press_thumb"><img src="./files/logo_018_56_20180718152418.png" width="16" height="16" alt=""></span>이데일리</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_018_56_20180718152418.png" width="16" height="16" alt=""></span>이데일리</a>
                             
                         </div>
                     </div>
@@ -3570,7 +2482,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=214&amp;aid=0001154094&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/1154094.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                                 <strong class="r_ico r_vod_small">동영상기사</strong>
@@ -3582,9 +2494,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=214&amp;aid=0001154094&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[집중취재M] 한류·넷플릭스 모두 금지인데‥中 '오징어게임 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[집중취재M] 한류·넷플릭스 모두 금지인데‥中 '오징어게임 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=214"><span class="list_press_thumb"><img src="./files/logo_214_56_20200630111130.png" width="16" height="16" alt=""></span>MBC</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_214_56_20200630111130.png" width="16" height="16" alt=""></span>MBC</a>
                             
                         </div>
                     </div>
@@ -3598,7 +2510,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=023&amp;aid=0003646725&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3646725.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3608,9 +2520,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=023&amp;aid=0003646725&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">채시라 남편 김태욱, 현금 45억 거머쥘 기회 놓쳤다…공모 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">채시라 남편 김태욱, 현금 45억 거머쥘 기회 놓쳤다…공모 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=023"><span class="list_press_thumb"><img src="./files/logo_023_56_20200429140429.png" width="16" height="16" alt=""></span>조선일보</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_023_56_20200429140429.png" width="16" height="16" alt=""></span>조선일보</a>
                             
                         </div>
                     </div>
@@ -3624,7 +2536,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=015&amp;aid=0004616890&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/4616890.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3634,9 +2546,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=015&amp;aid=0004616890&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">"삼성전자 지금 사야 돈 번다"…개미들 2조 '줍줍'한 이 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">"삼성전자 지금 사야 돈 번다"…개미들 2조 '줍줍'한 이 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=015"><span class="list_press_thumb"><img src="./files/logo_015_56_20200811194037.png" width="16" height="16" alt=""></span>한국경제</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_015_56_20200811194037.png" width="16" height="16" alt=""></span>한국경제</a>
                             
                         </div>
                     </div>
@@ -3650,7 +2562,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=032&amp;aid=0003104059&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3104059.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3660,7 +2572,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=032&amp;aid=0003104059&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">안민석 “대장동의 끝? 민주당과 이재명에게 득이 될 것”</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">안민석 “대장동의 끝? 민주당과 이재명에게 득이 될 것”</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=032"><span class="list_press_thumb"><img src="./files/logo_032_56_20181011174011.png" width="16" height="16" alt=""></span>경향신문</a>
                             
@@ -3676,7 +2588,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=215&amp;aid=0000990587&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/990587.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3686,7 +2598,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=215&amp;aid=0000990587&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">"빌딩 때문에 건보료 2,900만원 납부...내 나이는 1 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">"빌딩 때문에 건보료 2,900만원 납부...내 나이는 1 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=215"><span class="list_press_thumb"><img src="./files/logo_215_56_20200812134433.png" width="16" height="16" alt=""></span>한국경제TV</a>
                             
@@ -3706,7 +2618,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=119&amp;aid=0002538613&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/2538613.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3716,7 +2628,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=119&amp;aid=0002538613&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">"직장동료가 축의금으로 '5천원' 냈습니다" 실수vs의도적 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">"직장동료가 축의금으로 '5천원' 냈습니다" 실수vs의도적 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=119"><span class="list_press_thumb"><img src="./files/logo_119_56_20180718153118.png" width="16" height="16" alt=""></span>데일리안</a>
                             
@@ -3732,7 +2644,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=081&amp;aid=0003222659&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3222659.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3742,7 +2654,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=081&amp;aid=0003222659&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">“화이자 백신 맞으셨군요? 4개월부터 부스터샷 필요합니다” …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">“화이자 백신 맞으셨군요? 4개월부터 부스터샷 필요합니다” …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=081"><span class="list_press_thumb"><img src="./files/logo_081_56_20180718153018.png" width="16" height="16" alt=""></span>서울신문</a>
                             
@@ -3758,7 +2670,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=011&amp;aid=0003973782&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/3973782.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3768,9 +2680,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=011&amp;aid=0003973782&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">'8억 7,000만원' 시계 있는 데···추성훈, 롤렉스  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">'8억 7,000만원' 시계 있는 데···추성훈, 롤렉스  …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=011"><span class="list_press_thumb"><img src="./files/logo_011_56_20200228095228.jpg" width="16" height="16" alt=""></span>서울경제</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_011_56_20200228095228.jpg" width="16" height="16" alt=""></span>서울경제</a>
                             
                         </div>
                     </div>
@@ -3784,7 +2696,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=366&amp;aid=0000766979&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/766979.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3794,9 +2706,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=366&amp;aid=0000766979&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">이준석 “이완구 빈소서 만난 윤석열 ‘손바닥에 民 쓸까’라 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">이준석 “이완구 빈소서 만난 윤석열 ‘손바닥에 民 쓸까’라 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=366"><span class="list_press_thumb"><img src="./files/logo_366_56_20201223182636.png" width="16" height="16" alt=""></span>조선비즈</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_366_56_20201223182636.png" width="16" height="16" alt=""></span>조선비즈</a>
                             
                         </div>
                     </div>
@@ -3810,7 +2722,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=005&amp;aid=0001477303&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/1477303.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3820,9 +2732,9 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=005&amp;aid=0001477303&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">“엄마, 엄마”…불길 앞에서 기도한 딸 끝내 ‘오열’[포착 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">“엄마, 엄마”…불길 앞에서 기도한 딸 끝내 ‘오열’[포착 …</a>
                             
-                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=005"><span class="list_press_thumb"><img src="./files/logo_005_56_20180718152218.png" width="16" height="16" alt=""></span>국민일보</a>
+                                <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" ><span class="list_press_thumb"><img src="./files/logo_005_56_20180718152218.png" width="16" height="16" alt=""></span>국민일보</a>
                             
                         </div>
                     </div>
@@ -3840,7 +2752,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=094&amp;aid=0000009456&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/9456.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3850,7 +2762,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=094&amp;aid=0000009456&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[장거리 하이킹 불수사도북 ③ 북한산] 백운대 이후 페이스 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[장거리 하이킹 불수사도북 ③ 북한산] 백운대 이후 페이스 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=094"><span class="list_press_thumb"><img src="./files/logo_094_56_20180920153620.png" width="16" height="16" alt=""></span>월간 산</a>
                             
@@ -3866,7 +2778,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=052&amp;aid=0001653020&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/1653020.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                                 <strong class="r_ico r_vod_small">동영상기사</strong>
@@ -3878,7 +2790,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=052&amp;aid=0001653020&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">다큐 촬영 중 "내가 죽였지" 자인...21년만에 죄값 받 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">다큐 촬영 중 "내가 죽였지" 자인...21년만에 죄값 받 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=052"><span class="list_press_thumb"><img src="./files/logo_052_56_20211001183149.png" width="16" height="16" alt=""></span>YTN</a>
                             
@@ -3894,7 +2806,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=421&amp;aid=0005661074&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/5661074.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3904,7 +2816,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=421&amp;aid=0005661074&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[내일날씨]서울 아침 64년 만에 때 이른 추위…얼음 어는 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[내일날씨]서울 아침 64년 만에 때 이른 추위…얼음 어는 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=421"><span class="list_press_thumb"><img src="./files/logo_421_56_20210209173713.jpg" width="16" height="16" alt=""></span>뉴스1</a>
                             
@@ -3920,7 +2832,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=001&amp;aid=0012725910&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/12725910.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3930,7 +2842,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=001&amp;aid=0012725910&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">'몸짱 달력' 낸 고대생들…코시국에 몸 만든 이유는</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">'몸짱 달력' 낸 고대생들…코시국에 몸 만든 이유는</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=001"><span class="list_press_thumb"><img src="./files/logo_001_56_20200811154916.png" width="16" height="16" alt=""></span>연합뉴스</a>
                             
@@ -3946,7 +2858,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=277&amp;aid=0004984055&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/4984055.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3956,7 +2868,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=277&amp;aid=0004984055&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">이재영·이다영 출국 전 모교서 야간훈련…고교 은사 "인성  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">이재영·이다영 출국 전 모교서 야간훈련…고교 은사 "인성  …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=277"><span class="list_press_thumb"><img src="./files/logo_277_56_20180718153218.png" width="16" height="16" alt=""></span>아시아경제</a>
                             
@@ -3976,7 +2888,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=008&amp;aid=0004657356&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/4657356.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -3986,7 +2898,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=008&amp;aid=0004657356&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">[짤담]"카레 냄새 싫어요" 오뚜기 공장 평촌서 이전한 사 …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">[짤담]"카레 냄새 싫어요" 오뚜기 공장 평촌서 이전한 사 …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=008"><span class="list_press_thumb"><img src="./files/logo_008_56_20180913140213.png" width="16" height="16" alt=""></span>머니투데이</a>
                             
@@ -4002,7 +2914,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=030&amp;aid=0002975666&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/2975666.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -4012,7 +2924,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=030&amp;aid=0002975666&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">삼성 ,'1GB 동영상 10초만에'...5G 업로드 속도  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">삼성 ,'1GB 동영상 10초만에'...5G 업로드 속도  …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=030"><span class="list_press_thumb"><img src="./files/logo_030_56_20180720194820.png" width="16" height="16" alt=""></span>전자신문</a>
                             
@@ -4028,7 +2940,7 @@ function _flash_removeCallback() {}
                 
                     
                         
-                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=014&amp;aid=0004724022&amp;rankingType=RANKING" class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
+                        <a class="ranking_thumb nclicks(&#39;rig.renws2&#39;)">
                             <img src="./files/4724022.jpg" width="88" height="60" alt="" onerror="this.src=&#39;https://ssl.pstatic.net/static.news/image/news/errorimage/noimage_88x60.png&#39;;">
                             
                         </a>
@@ -4038,7 +2950,7 @@ function _flash_removeCallback() {}
                 <div class="list_text_wrap">
                     <div class="list_text">
                         <div class="list_text_inner">
-                            <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&amp;mid=shm&amp;sid1=001&amp;oid=014&amp;aid=0004724022&amp;rankingType=RANKING" class="list_tit nclicks(&#39;rig.renws2&#39;)">“화이자 맞은 동생 3주 뒤 하반신 마비…영원히 못 걸을  …</a>
+                            <a class="list_tit nclicks(&#39;rig.renws2&#39;)">“화이자 맞은 동생 3주 뒤 하반신 마비…영원히 못 걸을  …</a>
                             
                                 <a class="list_press nclicks(&#39;rig.renws2pname&#39;)" href="https://news.naver.com/main/ranking/office.naver?officeId=014"><span class="list_press_thumb"><img src="./files/logo_014_56_20201223183322.png" width="16" height="16" alt=""></span>파이낸셜뉴스</a>
                             
