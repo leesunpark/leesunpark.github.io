@@ -37,8 +37,12 @@
 
 <link type="text/css" rel="stylesheet" class="like_css" href="./files/likeit_multi.css">
 <link type="text/css" rel="stylesheet" class="like_css" href="./files/likeit_news.css">
-<script src="./files/clickcrD.js.다운로드" id="gnb_clickcrD" charset="utf-8"></script>
-<script type="text/javascript" src="./files/cbox.message.euckr.js.다운로드" charset="euc-kr"></script>
+
+<style>
+a {
+    pointer-events: none;
+}
+</style>
 
 </head>
 
@@ -61,52 +65,7 @@
 		<tbody><tr>
 			<td class="content">
 				<div id="main_content" class="content">
-					<script type="text/javascript">
-    if (nil) {
-        nil.init('naver_news', '003');
-        
-        nil.add({
-            'uri': 'http://news.naver.com/main/read.nhn?oid=003&aid=0003953734',
-            'dimension_1': '%EC%83%9D%ED%99%9C'
-            
-            , 'dimension_4': 'photo'
-            
-        });
-        //cv 측정
-        nil.send('cv', 'post_view');
-
-        if (window.attachEvent) {
-            window.attachEvent("onunload", function () {
-                nil.send('leave');
-            });
-        } else if (window.addEventListener) {
-            window.addEventListener("unload", function () {
-                nil.send('leave');
-            }, false);
-        } else {
-            var fnOnUnload = window.onunload;
-            window.onunload = function () {
-                nil.send('leave');
-                fnOnUnload();
-            };
-        }
-    }
-</script>
-
-<script type="text/javascript">
-    if (typeof window.ReadingObserver !== 'undefined') {
-        ReadingObserver.start('articleBody', {
-            sContentBottomId: 'spiLayer',
-            oid: '003',
-            aid: '0003953734',
-            sid: '103',
-            articleType: '1',
-            hitRefererType: 'UNKNOWN',
-            gdid: '88000127_000000000000000003953734'
-        });
-    }
-</script>
-
+					
 
 
 
