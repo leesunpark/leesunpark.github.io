@@ -160,24 +160,6 @@ html {
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml9 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml9 .letter',
-    scale: [0, 1],
-    duration: 1500,
-    elasticity: 600,
-    delay: (el, i) => 45 * (i+1)
-  }).add({
-    targets: '.ml9',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
 </script><tw-passagedata pid="1" name="c" tags="" position="1507,378" size="100,100">[[d]]</tw-passagedata><tw-passagedata pid="2" name="d" tags="" position="1551,570" size="100,100">[[e]]</tw-passagedata><tw-passagedata pid="3" name="e" tags="" position="1550,731" size="100,100">[[f]]</tw-passagedata><tw-passagedata pid="4" name="f" tags="" position="1533,954" size="100,100">[[g]]
 
 [[n]]</tw-passagedata><tw-passagedata pid="5" name="h" tags="" position="1798,888" size="100,100">[[i]]
@@ -321,8 +303,7 @@ ver 0.1
 
 [[알겠습니다|켜기 완료]]
 [[싫은데요?|호기로운 관객]]
-
-&lt;script src=&quot;C:\Users\leesu\OneDrive\문서\Twine\Stories\img\anime.min.js&quot;&gt;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="62" name="켜기 완료" tags="" position="2643,1298" size="100,100">여기가 어디지?
+</tw-passagedata><tw-passagedata pid="62" name="켜기 완료" tags="" position="2643,1298" size="100,100">여기가 어디지?
 (복사해서 붙여 넣으세요)
 
 서울특별시 종로구 북촌로6길 32-1
