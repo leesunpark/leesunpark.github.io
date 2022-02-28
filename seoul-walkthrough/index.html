@@ -171,8 +171,7 @@ this is start</tw-passagedata><tw-passagedata pid="34" name="ap" tags="" positio
 
 코옵 (권태현, 박이선)
 
-&lt;&lt;link &quot;1. 데이터 초기화&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;link &quot;2. 다시 시작&quot;&gt;&gt;&lt;&lt;goto &quot;시작&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Zzz2" tags="" position="2641,703" size="100,100">[[진동이 울린다]]</tw-passagedata><tw-passagedata pid="48" name="메시지가 왔다" tags="" position="2643,848" size="100,100">&quot;3시에 국립현대미술관 서울관에서 만나&quot;
+&lt;&lt;link &quot;데이터 초기화&quot;&gt;&gt;&lt;&lt;run UI.restart()&gt;&gt;&lt;&lt;/link&gt;&gt; 하고 &lt;&lt;link &quot;다시 시작&quot;&gt;&gt;&lt;&lt;goto &quot;시작&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Zzz2" tags="" position="2641,703" size="100,100">[[진동이 울린다]]</tw-passagedata><tw-passagedata pid="48" name="메시지가 왔다" tags="" position="2643,848" size="100,100">&quot;3시에 국립현대미술관 서울관에서 만나&quot;
 
 아맞다...😱
 
@@ -410,7 +409,7 @@ this is start</tw-passagedata><tw-passagedata pid="34" name="ap" tags="" positio
 
 2010년 3월
 
-[[다음|공사중]]</tw-passagedata><tw-passagedata pid="99" name="약속대상 전화" tags="" position="2848.3333333333335,6457.500000000001" size="100,100">&lt;&lt;type 30ms 여보세요? 
+[[다음|공사중]]</tw-passagedata><tw-passagedata pid="99" name="약속대상 전화" tags="" position="2848.3333333333335,6457.500000000001" size="100,100">&lt;&lt;type 100ms&gt;&gt;여보세요? 
 
 나 도착했는데 너 어디야
 
@@ -419,9 +418,9 @@ this is start</tw-passagedata><tw-passagedata pid="34" name="ap" tags="" positio
 아니 3시에 만나자며...
 늦어서 화난거야?
 
-저 아세요?
+저 아세요?&lt;&lt;/type&gt;&gt;
 
-&lt;&lt;timed 3s&gt;&gt;&lt;&lt;goto &quot;credit&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&gt;&gt;&lt;&lt;/type&gt;&gt;
+&lt;&lt;timed 10s&gt;&gt;&lt;&lt;goto &quot;credit&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="100" name="(전화가 끊어진다)" tags="" position="2858.3333333333335,6610.833333333334" size="100,100"></tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
